@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "hint": "^7.1.13"
+  },
+  "dependencies": {
+    "puppeteer": "^24.34.0",
+    "sharp": "^0.34.5",
+    "csv-parse": "^5.4.0"
+  },
+  "scripts": {
+    "prerender": "node scripts/prerender.js",
+    "srcset": "node scripts/generate_srcset.js",
+    "precompress": "node scripts/precompress.js",
+    "apply-seo": "node scripts/apply_seo_templates.js",
+    "build:assets": "node scripts/precompress.js && echo 'Run srcset generation separately with node scripts/generate_srcset.js <image>'"
+  }
+}
+
+

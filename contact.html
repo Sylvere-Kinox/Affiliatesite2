@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Analytics 4 (Conditional) -->
+  <script>
+    function loadGoogleAnalytics() {
+      if (window.cookieConsent && window.cookieConsent.analytics) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WY4TQYS4';
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-88WY4TQYS4');
+      }
+    }
+    document.addEventListener('cookieConsentGiven', loadGoogleAnalytics);
+  </script>
+  <link rel="icon" href="images/Cafe Logo.png" type="image/png">
+  <title>Contact — Expert Cafetière</title>
+  <meta name="description" content="Contactez Sylvère Kinox directement. Questions, feedback, ou suggestions pour Expert Cafetière.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://expert-cafetiere.eu/contact.html">
+  <meta property="og:title" content="Contactez Expert Cafetière — Questions & Feedback">
+  <meta property="og:description" content="Formulaire de contact direct avec Sylvère Kinox. Vos suggestions et questions sont les bienvenues.">
+
+  <meta name="keywords" content="contact, formulaire contact, feedback, questions">
+  <meta name="author" content="Sylvère Kinox">
+  <meta name="date" content="2026-02-19">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://expert-cafetiere.eu/contact.html">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cal+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <script src="script.js" defer></script>
+  <script src="config.js"></script>
+
+  <!-- Schema.org Contact -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "contact@expert-cafetiere.eu",
+    "url": "https://expert-cafetiere.eu/contact.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sylvère Kinox",
+    "email": "contact@expert-cafetiere.eu",
+    "jobTitle": "Rédacteur et testeur indépendant",
+    "url": "https://expert-cafetiere.eu/about.html"
+  }
+  </script>
+</head>
+<body>
+  <div class="site-topline" role="region" aria-label="Annonce">Nouveau guide 2026 — Top 10 mis à jour • <a href="top10.html">Voir le classement</a> <button class="close-topline" aria-label="Fermer">✕</button></div>
+
+  <header class="header-professional">
+    <div class="container-professional">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent hover:scale-105 transition-transform duration-300">
+            EXPERT<span class="text-primary">CAFÉTIÈRE</span>
+          </a>
+        </div>
+
+        <nav class="hidden md:block">
+          <div class="flex items-center space-x-8">
+            <a href="top10.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              Top 10
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="comparator.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              Comparateur
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="blog.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              Tests & Guides
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="faq.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              FAQ
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="about.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              À Propos
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="methodology.html" class="text-muted hover:text-secondary font-medium transition-colors duration-200 relative group">
+              Méthodologie
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-accent group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="contact.html" class="text-secondary font-medium border-b-2 border-secondary">
+              Contact
+            </a>
+            <a href="#" class="btn-professional btn-primary-professional ml-4">
+              Nouveautés
+            </a>
+          </div>
+        </nav>
+
+        <div class="-mr-2 flex md:hidden">
+          <button type="button" onclick="toggleMobileMenu()" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-lg text-muted hover:text-secondary hover:bg-neutral focus:outline-none focus:ring-2 focus:ring-accent transition-colors duration-200" aria-label="Navigation">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-surface/95 backdrop-blur-md border-t border-neutral">
+        <a href="top10.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Top 10</a>
+        <a href="comparator.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Comparateur</a>
+        <a href="blog.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Tests & Guides</a>
+        <a href="faq.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">FAQ</a>
+        <a href="about.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">À Propos</a>
+        <a href="methodology.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Méthodologie</a>
+        <a href="contact.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        <a href="#" class="bg-gradient-to-r from-primary to-secondary text-surface block px-3 py-2 rounded-md text-base font-medium">Nouveautés</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-16">
+    
+    <div class="max-w-2xl mx-auto">
+      <!-- Hero Section -->
+      <div class="text-center mb-12 animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-bold text-primary mb-6">Nous Écrire</h1>
+        <p class="text-xl text-muted mb-4">Questions, suggestions, ou corrections ? Sylvère lit tous les messages personnellement.</p>
+        <div class="inline-block bg-accent/10 px-6 py-3 rounded-lg border border-secondary/20">
+          <p class="text-secondary font-semibold">⏱ Réponse dans les 48h</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="grid md:grid-cols-3 gap-4 mb-12">
+        <div class="card-professional p-6 text-center">
+          <h3 class="text-lg font-bold text-secondary mb-2"> Email</h3>
+          <p class="text-muted text-sm">contact@expert-cafetiere.eu</p>
+          <p class="text-xs text-muted/70 mt-2">Réponse en 48h</p>
+        </div>
+        
+        <div class="card-professional p-6 text-center">
+          <h3 class="text-lg font-bold text-secondary mb-2"> Localisation</h3>
+          <p class="text-muted text-sm">Côte d'Ivoire</p>
+          <p class="text-xs text-muted/70 mt-2">Fuseau horaire UTC+0</p>
+        </div>
+
+        <div class="card-professional p-6 text-center">
+          <h3 class="text-lg font-bold text-secondary mb-2"> Partenariat</h3>
+          <p class="text-muted text-sm">Public & transparent</p>
+          <p class="text-xs text-muted/70 mt-2">Collaboration en direct</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <section class="card-professional p-8 mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6">Formulaire de Contact</h2>
+        
+        <form method="POST" action="https://formspree.io/f/your-form-id" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-primary mb-2">Votre nom *</label>
+            <input 
+              id="name" 
+              name="name" 
+              type="text" 
+              required
+              placeholder="Ex: Pierre Martin"
+              class="w-full px-4 py-2 rounded-lg border border-neutral bg-surface text-muted placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+            >
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-semibold text-primary mb-2">Votre email *</label>
+            <input 
+              id="email" 
+              name="email" 
+              type="email" 
+              required
+              placeholder="exemple@email.com"
+              class="w-full px-4 py-2 rounded-lg border border-neutral bg-surface text-muted placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+            >
+          </div>
+
+          <div>
+            <label for="subject" class="block text-sm font-semibold text-primary mb-2">Sujet *</label>
+            <select 
+              id="subject" 
+              name="subject" 
+              required
+              class="w-full px-4 py-2 rounded-lg border border-neutral bg-surface text-muted focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+            >
+              <option value="">-- Sélectionner un sujet --</option>
+              <option value="product-test">Demander un test de produit</option>
+              <option value="correction">Correction/Erreur sur un article</option>
+              <option value="improvement">Suggestion d'amélioration</option>
+              <option value="partnership">Partenariat / Collaboration</option>
+              <option value="feedback">Feedback général</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold text-primary mb-2">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              required
+              placeholder="Dites-moi comment je peux vous aider..."
+              class="w-full px-4 py-2 rounded-lg border border-neutral bg-surface text-muted placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition resize-none"
+            ></textarea>
+            <p class="text-xs text-muted/70 mt-2">Minimum 10 caractères</p>
+          </div>
+
+          <div class="bg-accent/5 border border-secondary/20 rounded-lg p-4">
+            <label class="flex items-start">
+              <input 
+                type="checkbox" 
+                name="privacy" 
+                required
+                class="mt-1 mr-3 rounded"
+              >
+              <span class="text-sm text-muted">
+                J'accepte que mes données soient utilisées pour répondre à ma demande. 
+                <a href="legal.html" class="text-secondary underline">Politique de confidentialité</a>
+              </span>
+            </label>
+          </div>
+
+          <button 
+            type="submit"
+            class="w-full btn-professional btn-primary-professional py-3 font-semibold text-lg transition"
+          >
+            Envoyer le Message
+          </button>
+        </form>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="card-professional p-8 mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6 border-b-2 border-secondary pb-3">Questions Fréquentes</h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-bold text-secondary mb-2">Combien de temps pour une réponse ?</h3>
+            <p class="text-muted">Je lis tous les messages personnellement. Vous recevrez une réponse dans les 48 heures en général (le weekend : réponse parfois plus longue).</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-secondary mb-2">Vous acceptez les demandes de partenariat ?</h3>
+            <p class="text-muted">Oui, mais à une condition : pas de perte d'indépendance. Les partenaires doivent accepter que je teste honnêtement (défauts inclus).</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-secondary mb-2">Je veux soumettre une machine à tester... comment ?</h3>
+            <p class="text-muted">Via ce formulaire avec le sujet "Demander un test de produit". Je ne garantis pas que ce sera testé (file d'attente), mais vous allez recevoir une réponse claire.</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-secondary mb-2">Vous faites des retours pour les fabricants ?</h3>
+            <p class="text-muted">Oui, régulièrement. Ils me contactent si un article mentionne un défaut. Je maintiens mon honnêteté mais j'écoute les corrections factuelles.</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-secondary mb-2">Pouvez-vous supprimer un article sur une machine ?</h3>
+            <p class="text-muted">Non. Mais je le corrigerai si vous prouvez une erreur factuelle. La transparence c'est important, même pour les critiques.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alternative Contact -->
+      <section class="card-professional p-8 bg-gradient-to-r from-primary/5 to-secondary/5 border-l-4 border-secondary">
+        <h3 class="text-lg font-bold text-secondary mb-3"> Préférez discuter autrement ?</h3>
+        <p class="text-muted mb-4">Le formulaire, c'est plus direct et sûr. Mais si vous avez un problème technique, vous pouvez aussi :</p>
+        <ul class="space-y-2 text-sm text-muted">
+          <li>✓ <strong>Laisser un commentaire</strong> sur l'article même</li>
+          <li>✓ <strong>Signaler une erreur Google</strong> si le test semble faux</li>
+          <li>✓ <strong>Nous contacter via les réseaux</strong> (si nous les activons)</li>
+        </ul>
+      </section>
+
+      <!-- Transparency Section -->
+      <section class="card-professional p-6 bg-warning/5 border border-warning/30 rounded-lg mt-8">
+        <h3 class="text-lg font-bold text-warning mb-3"> Divulgation d'Affiliation</h3>
+        <p class="text-sm text-muted mb-3">
+          <strong>Expert Cafetière est partenaire Amazon.</strong> Quand vous achetez via nos liens (exemple : "Voir le prix sur Amazon"), nous recevons une petite commission. Vous ne payez rien de plus.
+        </p>
+        <p class="text-sm text-muted">
+          C'est transparent, régulé par la loi, et cela nous permet de tester gratuitement les machines et de recommander honnêtement — même si une machine n'est pas "la plus chère" pour nous. <a href="about.html" class="text-secondary underline">En savoir plus sur notre transparence</a>.
+        </p>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="bg-gray-800 border-t border-gray-700 mt-20 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold text-secondary mb-4 uppercase">Exploration</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Accueil</a></li>
+            <li><a href="top10.html" class="text-gray-300 hover:text-white transition">Top 10</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white transition">Tests & Guides</a></li>
+            <li><a href="comparator.html" class="text-gray-300 hover:text-white transition">Comparateur</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold text-secondary mb-4 uppercase">Ressources</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="about.html" class="text-gray-300 hover:text-white transition">À Propos</a></li>
+            <li><a href="methodology.html" class="text-gray-300 hover:text-white transition">Méthodologie</a></li>
+            <li><a href="faq.html" class="text-gray-300 hover:text-white transition">FAQ</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-secondary mb-4 uppercase">Légal</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="legal.html" class="text-gray-300 hover:text-white transition">Mentions Légales</a></li>
+            <li><a href="legal.html" class="text-gray-300 hover:text-white transition">Confidentialité</a></li>
+            <li><a href="legal.html" class="text-gray-300 hover:text-white transition">Cookies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-red-400 mb-4 uppercase">Affiliation</h3>
+          <p class="text-xs text-gray-400">
+            "En tant que Partenaire Amazon, EXPERT CAFÉTIÈRE réalise un bénéfice sur les achats remplissant les conditions requises."
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-gray-700 text-center">
+        <p class="text-sm text-gray-500">
+          &copy; 2026 <span class="font-bold text-secondary">EXPERT CAFÉTIÈRE</span> • Contact par Sylvère Kinox.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function checkCookieConsent() {
+      const consent = getCookie('cookieConsent');
+      if (!consent) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
+    }
+
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+
+    document.addEventListener('DOMContentLoaded', checkCookieConsent);
+  </script>
+</body>
+</html>

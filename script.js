@@ -1,0 +1,199 @@
+/**
+ * EXPERT CAFÉTIÈRE - INTERACTIONS JAVASCRIPT
+ * Animations, interactions et fonctionnalités avancées
+ */
+document.addEventListener('DOMContentLoaded', function() {
+	initScrollAnimations();
+	initMobileMenu();
+	initTooltips();
+	initCounters();
+	initTopline();
+	initCookieConsent();
+	initLazyLoading();
+	initThemeToggle();
+});
+
+/**
+ * Topline close persistence using localStorage
+ */
+function initTopline() {
+	const topline = document.querySelector('.site-topline');
+	if (!topline) return;
+	try {
+		const closed = localStorage.getItem('toplineClosed');
+		if (closed === '1') { topline.style.display = 'none'; }
+		const btn = topline.querySelector('.close-topline');
+		if (btn) {
+			btn.addEventListener('click', () => {
+				topline.style.display = 'none';
+				localStorage.setItem('toplineClosed', '1');
+			});
+		}
+	} catch (e) { console.warn('Topline persistence unavailable', e); }
+}
+
+/**
+ * Simple cookie consent banner (stores acceptance in localStorage)
+ */
+function initCookieConsent() {
+	try {
+		if (localStorage.getItem('cookieConsent') === 'accepted') {
+			// restore consent and notify
+			window.cookieConsent = { analytics: true };
+			document.dispatchEvent(new Event('cookieConsentGiven'));
+			return;
+		}
+	} catch (e) {}
+
+	const banner = document.createElement('div');
+	banner.className = 'cookie-consent fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-50 p-4 bg-white/95 rounded-lg shadow-lg flex items-center gap-4';
+	banner.setAttribute('role', 'dialog');
+	banner.setAttribute('aria-live', 'polite');
+	banner.innerHTML = `
+		<div class="flex-1 text-sm text-gray-800">Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre utilisation des cookies.</div>
+		<div class="flex-shrink-0">
+			<button class="btn-accept-cookie btn-primary-professional">Accepter</button>
+			<button class="btn-decline-cookie btn-secondary-professional ml-2">Paramètres</button>
+		</div>
+	`;
+	document.body.appendChild(banner);
+
+	banner.querySelector('.btn-accept-cookie').addEventListener('click', () => {
+		try { localStorage.setItem('cookieConsent', 'accepted'); } catch (e) {}
+		window.cookieConsent = { analytics: true };
+		document.dispatchEvent(new Event('cookieConsentGiven'));
+		banner.remove();
+	});
+
+	banner.querySelector('.btn-decline-cookie').addEventListener('click', () => {
+		try { localStorage.setItem('cookieConsent', 'declined'); } catch (e) {}
+		window.cookieConsent = { analytics: false };
+		banner.remove();
+	});
+}
+
+/** * Animations au scroll avec Intersection Observer */
+function initScrollAnimations() {
+	const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('animate-fade-in-up'); });
+	}, observerOptions);
+	document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+	document.querySelectorAll('.card-professional').forEach((card, index) => {
+		card.style.transitionDelay = `${index * 0.1}s`;
+		observer.observe(card);
+	});
+}
+
+/** * Effets hover avancés */
+function initHoverEffects() {
+	document.querySelectorAll('.card-professional').forEach(card => {
+		card.addEventListener('mousemove', (e) => {
+			const rect = card.getBoundingClientRect();
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
+			const centerX = rect.width / 2;
+			const centerY = rect.height / 2;
+			const rotateX = (y - centerY) / 10;
+			const rotateY = (centerX - x) / 10;
+			card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+		});
+		card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+	});
+	document.querySelectorAll('.btn-primary-professional').forEach(btn => {
+		btn.addEventListener('mouseenter', () => btn.classList.add('animate-pulse-glow'));
+		btn.addEventListener('mouseleave', () => btn.classList.remove('animate-pulse-glow'));
+	});
+}
+
+/** * Menu mobile amélioré */
+function initMobileMenu() {
+	const mobileMenuToggle = document.querySelector('[onclick="toggleMobileMenu()"]');
+	const mobileMenu = document.getElementById('mobile-menu');
+	if (mobileMenuToggle && mobileMenu) {
+		mobileMenuToggle.removeAttribute('onclick');
+		mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+		document.addEventListener('click', (e) => {
+			if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) mobileMenu.classList.add('hidden');
+		});
+	}
+}
+function toggleMobileMenu() {
+	const mobileMenu = document.getElementById('mobile-menu');
+	if (mobileMenu) {
+		mobileMenu.classList.toggle('hidden');
+		if (!mobileMenu.classList.contains('hidden')) mobileMenu.style.animation = 'slideInRight 0.3s ease-out';
+	}
+}
+
+/** * Tooltips informatifs */
+function initTooltips(){
+	document.querySelectorAll('[data-tooltip]').forEach(element => { element.addEventListener('mouseenter', showTooltip); element.addEventListener('mouseleave', hideTooltip); });
+}
+function showTooltip(e){
+	const tooltipText = e.target.getAttribute('data-tooltip');
+	if (!tooltipText) return;
+	const tooltip = document.createElement('div'); tooltip.className = 'tooltip'; tooltip.textContent = tooltipText; document.body.appendChild(tooltip);
+	const rect = e.target.getBoundingClientRect(); tooltip.style.left = `${rect.left + rect.width / 2}px`; tooltip.style.top = `${rect.top - 10}px`; tooltip.style.transform = 'translateX(-50%)';
+	setTimeout(()=> { tooltip.style.opacity = '1'; tooltip.style.transform = 'translateX(-50%) translateY(-5px)'; }, 10);
+}
+function hideTooltip(){ const tooltip = document.querySelector('.tooltip'); if (tooltip) { tooltip.style.opacity = '0'; setTimeout(()=> { if (tooltip.parentNode) tooltip.parentNode.removeChild(tooltip); }, 300); } }
+
+/** * Compteurs animés pour les statistiques */
+function initCounters(){
+	const counters = document.querySelectorAll('[data-counter]');
+	counters.forEach(counter => {
+		const target = parseFloat(counter.getAttribute('data-counter'));
+		const suffix = counter.textContent.replace(/[0-9.]/g, '');
+		const duration = 2000;
+		const step = target / (duration / 16);
+		let current = 0;
+		const timer = setInterval(()=>{
+			current += step;
+			if (current >= target) { current = target; clearInterval(timer); }
+			if (target % 1 !== 0) counter.textContent = current.toFixed(1) + suffix; else counter.textContent = Math.floor(current).toLocaleString() + suffix;
+		}, 16);
+	});
+}
+
+/** * Toggle thème sombre/clair (optionnel)*/
+function initThemeToggle(){
+	const themeToggle = document.createElement('button'); themeToggle.innerHTML = '🌓';
+	themeToggle.className = 'fixed bottom-6 right-6 w-12 h-12 bg-primary text-accent rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110';
+	themeToggle.setAttribute('aria-label','Changer de thème');
+	themeToggle.addEventListener('click', ()=>{ document.body.classList.toggle('dark-theme'); themeToggle.innerHTML = document.body.classList.contains('dark-theme')? '☀️':'🌓'; });
+}
+
+/** * Smooth scroll pour les ancres */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e){ e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }); });
+
+/** * Lazy loading des images */
+function initLazyLoading(){
+	const images = document.querySelectorAll('img[data-src]');
+	const imageObserver = new IntersectionObserver((entries, observer)=>{ entries.forEach(entry => { if (entry.isIntersecting){ const img = entry.target; img.src = img.dataset.src; img.classList.remove('lazy'); observer.unobserve(img); } }); });
+	images.forEach(img => imageObserver.observe(img));
+}
+
+/** * Gestion des erreurs JavaScript */
+window.addEventListener('error', function(e){ console.warn('JavaScript Error:', e.message); });
+
+/** * Performance monitoring */
+if ('performance' in window && 'timing' in performance){ window.addEventListener('load', function(){ const perfData = performance.timing; const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart; console.log('Page load time:', pageLoadTime + 'ms'); }); }
+
+/** * Styles CSS pour les tooltips */
+const tooltipStyles = ` .tooltip {position: absolute;background: var(--primary);color: white;padding: 0.5rem 1rem;border-radius: var(--border-radius);font-size: 0.875rem;white-space: nowrap;z-index: 1000;opacity: 0;transform: translateX(-50%)translateY(0);transition: all 0.3s ease;box-shadow: var(--shadow-medium);pointer-events: none;}.tooltip::before {content: '';position: absolute;top: 100%;left: 50%;transform: translateX(-50%);border: 5px solid transparent;border-top-color: var(--primary);}`;
+const styleSheet = document.createElement('style'); styleSheet.textContent = tooltipStyles; document.head.appendChild(styleSheet);
+
+/** * Recherche interne simple */
+function initSearch(){
+	const searchInput = document.getElementById('search-input');
+	const searchBtn = document.getElementById('search-btn');
+	if (!searchInput || !searchBtn) return;
+	const searchPages = { 'philips':'philips-serie-5000.html','5500':'philips-serie-5000.html','3300':'philips-series-3200.html','delonghi':'delonghi-dinamica.html','magnifica':'delonghi-dinamica.html','jura':'jura-e8.html','nespresso':'nespresso-vertuo-next.html','breville':'breville-barista-express.html','krups':'krups-evidence-ea815b.html','saeco':'saeco-picobaristo.html','siemens':'siemens-eq9-s500.html','top 10':'top10.html','comparateur':'comparator.html','blog':'blog.html','faq':'faq.html','tendances':'tendances-cafe-2026.html' };
+	function performSearch(query){ const lowerQuery = query.toLowerCase().trim(); if (!lowerQuery) return; for (const [keyword,page] of Object.entries(searchPages)){ if (lowerQuery.includes(keyword)){ window.location.href = page; return; } } window.location.href = 'comparator.html'; }
+	searchInput.addEventListener('keypress', (e)=>{ if (e.key === 'Enter') performSearch(searchInput.value); });
+	searchBtn.addEventListener('click', ()=> performSearch(searchInput.value));
+}
+document.addEventListener('DOMContentLoaded', initSearch);
+
+if ('serviceWorker' in navigator){ window.addEventListener('load', ()=> { navigator.serviceWorker.register('/sw.js').then(registration => { console.log('Service Worker enregistré avec succès:', registration); }).catch(error => { console.log('Échec de l\'enregistrement du Service Worker:', error); }); }); }
