@@ -7,16 +7,14 @@
     <!-- Google Analytics 4 (Conditional - loaded after consent) -->
     <script>
         function loadGoogleAnalytics() {
-            if (window.cookieConsent && window.cookieConsent.analytics) {
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WY4TQYS4';
-                document.head.appendChild(script);
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-88WY4TQYS4');
-            }
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WY4TQYS4';
+            document.head.appendChild(script);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-88WY4TQYS4');
         }
         document.addEventListener('cookieConsentGiven', loadGoogleAnalytics);
     </script>
@@ -195,6 +193,31 @@
                 </div>
             </div>
         </div>
+        
+            <!-- Article: De'Longhi Dinamica Plus (Blog Quotidien) -->
+            <div class="card-professional p-6 mt-6">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img loading="lazy" src="images/De'Longhi Dinamica Plus ECAM382.70.B, Machine Automatique à Café en Grains.jpg" alt="De'Longhi Dinamica Plus ECAM382.70.B — Test" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold">TEST COMPLET</span>
+                            <span class="bg-warning text-white px-3 py-1 rounded-full text-xs font-semibold">★ 4.7/5</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">De'Longhi Dinamica Plus ECAM382.70.B — Test complet et verdict</h3>
+                        <p class="text-muted mb-4">La De'Longhi Dinamica Plus ECAM382.70.B est une machine automatique en grains avec LatteCrema Plus. Notre test complet couvre qualité du café, mousseur, entretien et meilleur rapport qualité/prix.</p>
+                        <div class="flex justify-between items-center text-sm text-muted">
+                            <div class="flex gap-4">
+                                <span>📅 23 Février 2026</span>
+                                <span>👤 Par <a href="about.html">Sylvère Kinox</a></span>
+                                <span>⏱️ 6 min</span>
+                            </div>
+                            <a href="delonghi-dinamica.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire l'article complet →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <!-- Articles Invités -->
         <div class="mb-16">
@@ -202,29 +225,28 @@
                 <svg class="w-8 h-8 inline mr-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
-                Articles Invités
+                Articles Invités & Tests
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
                 <div class="card-professional p-6">
                     <div class="flex flex-col">
                         <div class="mb-4">
-                            <img loading="lazy" src="images/breville-barista-express.jpg" alt="Guide d'achat machines à café 2026" class="w-full h-48 object-cover rounded-lg">
+                            <img loading="lazy" src="images/breville-barista-express-320.avif" alt="Guide d'achat machines à café 2026" class="w-full h-48 object-cover rounded-lg">
                         </div>
                         <div class="flex gap-2 mb-3">
                             <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">GUIDE ACHAT</span>
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">Les 10 Meilleures Machines à Café pour les Amateurs en 2026</h3>
                         <p class="text-muted mb-4 text-sm">Découvrez notre sélection des 10 meilleures machines à café pour amateurs en 2026. Comparatifs, tests et conseils pour choisir la parfaite cafetière.</p>
-                        <div class="flex justify-between items-center text-sm text-muted">
-                            <div class="flex gap-4">
-                                <span>📅 8 Janvier 2026</span>
-                                <span>⏱️ 8 min</span>
-                            </div>
-                            <a href="guest-article-1.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire l'article →</a>
+                        <div class="flex justify-between items-center text-sm text-muted mt-auto">
+                            <span>📅 8 Janvier 2026 • ⏱️ 8 min</span>
+                            <a href="guest-article-1.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire →</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Article 2 -->
                 <div class="card-professional p-6">
                     <div class="flex flex-col">
                         <div class="mb-4">
@@ -235,16 +257,14 @@
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">Comment Entretenir et Nettoyer Votre Machine à Café</h3>
                         <p class="text-muted mb-4 text-sm">Apprenez à entretenir et nettoyer votre machine à café avec nos astuces pratiques. Prolongez la durée de vie de votre cafetière et savourez un café parfait.</p>
-                        <div class="flex justify-between items-center text-sm text-muted">
-                            <div class="flex gap-4">
-                                <span>📅 9 Janvier 2026</span>
-                                <span>⏱️ 6 min</span>
-                            </div>
-                            <a href="guest-article-2.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire l'article →</a>
+                        <div class="flex justify-between items-center text-sm text-muted mt-auto">
+                            <span>📅 9 Janvier 2026 • ⏱️ 6 min</span>
+                            <a href="guest-article-2.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire →</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Article 3 -->
                 <div class="card-professional p-6">
                     <div class="flex flex-col">
                         <div class="mb-4">
@@ -255,12 +275,45 @@
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">5 Erreurs à Éviter Lors de l'Achat d'une Machine à Café</h3>
                         <p class="text-muted mb-4 text-sm">Découvrez les 5 erreurs courantes à éviter lors de l'achat d'une machine à café. Conseils d'experts pour bien choisir votre cafetière.</p>
-                        <div class="flex justify-between items-center text-sm text-muted">
-                            <div class="flex gap-4">
-                                <span>📅 10 Janvier 2026</span>
-                                <span>⏱️ 5 min</span>
-                            </div>
-                            <a href="guest-article-3.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire l'article →</a>
+                        <div class="flex justify-between items-center text-sm text-muted mt-auto">
+                            <span>📅 10 Janvier 2026 • ⏱️ 5 min</span>
+                            <a href="guest-article-3.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="card-professional p-6">
+                    <div class="flex flex-col">
+                        <div class="mb-4">
+                            <img loading="lazy" src="images/OutIn Nano Machine.jpg" alt="Guide cafetière portable" class="w-full h-48 object-cover rounded-lg">
+                        </div>
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">GUIDE COMPLET</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Guide Mobile — Choisir une cafetière portable</h3>
+                        <p class="text-muted mb-4 text-sm">Guide d'experts pour choisir la meilleure cafetière nomade. 4 profils d'usage, critères détaillés et recommandations personnalisées.</p>
+                        <div class="flex justify-between items-center text-sm text-muted mt-auto">
+                            <span>📅 23 Février 2026 • ⏱️ 9 min</span>
+                            <a href="guest-article-4.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="card-professional p-6">
+                    <div class="flex flex-col">
+                        <div class="mb-4">
+                            <img loading="lazy" src="images/OutIn Nano Machine.jpg" alt="OutIn Nano machine à café portable" class="w-full h-48 object-cover rounded-lg">
+                        </div>
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-warning text-white px-3 py-1 rounded-full text-xs font-semibold">★ TEST 8.5/10</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">OutIn Nano — Test complet & verdict</h3>
+                        <p class="text-muted mb-4 text-sm">Test terrain détaillé : design, autonomie, extraction, verdict complet. Mini-machine USB-C pour nomades exigeants.</p>
+                        <div class="flex justify-between items-center text-sm text-muted mt-auto">
+                            <span>📅 23 Février 2026 • ⏱️ 7 min</span>
+                            <a href="guest-article-5.html" class="text-secondary font-semibold hover:text-accent transition-colors">Lire →</a>
                         </div>
                     </div>
                 </div>

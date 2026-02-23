@@ -20,6 +20,18 @@
         }
         document.addEventListener('cookieConsentGiven', loadGoogleAnalytics);
     </script>
+        <!-- Breadcrumb JSON-LD -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type":"ListItem","position":1,"name":"Accueil","item":"https://expert-cafetiere.eu/"},
+                {"@type":"ListItem","position":2,"name":"Tests","item":"https://expert-cafetiere.eu/blog.html"},
+                {"@type":"ListItem","position":3,"name":"Krups Evidence EA815B","item":"https://expert-cafetiere.eu/krups-evidence-ea815b.html"}
+            ]
+        }
+        </script>
     <link rel="icon" href="images/Cafe Logo.png" type="image/png">
     <title>Krups Evidence Eco — Test, durabilité & alternatives</title>
     <meta name="author" content="Sylvère Kinox">
@@ -446,6 +458,31 @@
       }
     }
     </script>
+
+        <!-- Article structured data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Krups Evidence Eco EA815B — Test Complet 2026",
+            "author": {"@type":"Person","name":"Sylvère Kinox"},
+            "datePublished": "2026-02-19",
+            "image": "https://expert-cafetiere.eu/images/krups-evidence-ea815b.jpg",
+            "publisher": {"@type":"Organization","name":"EXPERT CAFÉTIÈRE","logo":{"@type":"ImageObject","url":"https://expert-cafetiere.eu/images/Cafe Logo-320.avif"}}
+        }
+        </script>
+
+        <!-- FAQ structured data -->
+        <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+                {"@type":"Question","name":"La Krups Evidence est-elle vraiment éco-responsable ?","acceptedAnswer":{"@type":"Answer","text":"Elle utilise des matériaux partiellement recyclés et une partie de la production est localisée en France, ce qui réduit l'empreinte carbone relative."}},
+                {"@type":"Question","name":"Combien de recettes propose la Evidence EA815B ?","acceptedAnswer":{"@type":"Answer","text":"La machine propose environ 9 recettes préréglées adaptées aux amateurs de boissons lactées et expressos."}}
+            ]
+        }
+        </script>
 </body>
 </html>
 
