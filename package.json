@@ -11,8 +11,8 @@
     "prerender": "node scripts/prerender.js",
     "srcset": "node scripts/generate_srcset.js",
     "precompress": "node scripts/precompress.js",
-    "apply-seo": "node scripts/apply_seo_templates.js",
-    "build:assets": "node scripts/precompress.js && echo 'Run srcset generation separately with node scripts/generate_srcset.js <image>'"
+    "apply-seo": "node scripts/apply_seo_templates.js",    "build:articles": "node scripts/generate_articles.js",
+    "build:blog": "node scripts/generate_blog.js",    "build:assets": "node scripts/precompress.js && echo 'Run srcset generation separately with node scripts/generate_srcset.js <image>'"
   }
 }
 

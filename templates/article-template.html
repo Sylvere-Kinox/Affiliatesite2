@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics 4 (Conditional - loaded after consent) -->
+    <script>
+        function loadGoogleAnalytics() {
+            if (window.cookieConsent && window.cookieConsent.analytics) {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WY4TQYS4';
+                document.head.appendChild(script);
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-88WY4TQYS4');
+            }
+        }
+        document.addEventListener('cookieConsentGiven', loadGoogleAnalytics);
+    </script>
+    <link rel="icon" href="images/Cafe Logo.png" type="image/png">
+    <title>{{title}} — Test, fonctionnalités & alternatives</title>
+    <meta name="author" content="Sylvère Kinox">
+    <meta name="date" content="{{lastUpdated}}">
+    <meta name="description" content="{{description}}">
+    <link rel="preload" as="image" href="{{image}}" type="image/jpeg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://expert-cafetiere.eu/{{slug}}">
+    <meta property="og:title" content="Test {{title}} 2026 – Avis complet et meilleur prix | Expert Cafetière">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="https://expert-cafetiere.eu/{{image}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://expert-cafetiere.eu/{{slug}}">
+    <meta property="twitter:title" content="Test {{title}} 2026 – Avis complet et meilleur prix | Expert Cafetière">
+    <meta property="twitter:description" content="{{description}}">
+    <meta property="twitter:image" content="https://expert-cafetiere.eu/{{image}}">
+
+    <!-- Métadonnées supplémentaires -->
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://expert-cafetiere.eu/{{slug}}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cal+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <script src="script.js" defer></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="site-topline" role="region" aria-label="Annonce">Nouveau guide 2026 — Top 10 mis à jour • <a href="top10.html">Voir le classement</a> <button class="close-topline" aria-label="Fermer">✕</button></div>
+    <header class="bg-surface shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="text-2xl font-bold text-primary font-display">Expert<span class="text-secondary">Cafetière</span></div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="top10.html" class="nav-link text-muted hover:text-secondary font-medium">Top 10</a>
+                    <a href="comparator.html" class="nav-link text-muted hover:text-secondary font-medium">Comparateur</a>
+                    <a href="blog.html" class="nav-link text-muted hover:text-secondary font-medium">Tests & Guides</a>
+                    <a href="faq.html" class="nav-link text-muted hover:text-secondary font-medium">FAQ</a>
+                    <a href="about.html" class="nav-link text-muted hover:text-secondary font-medium">À Propos</a>
+                    <a href="methodology.html" class="nav-link text-muted hover:text-secondary font-medium">Méthodologie</a>
+                    <a href="contact.html" class="nav-link text-muted hover:text-secondary font-medium">Contact</a>
+                </nav>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-neutral pt-4">
+                <a href="top10.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Top 10</a>
+                <a href="comparator.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Comparateur</a>
+                <a href="blog.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Tests & Guides</a>
+                <a href="faq.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">FAQ</a>
+                <a href="about.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">À Propos</a>
+                <a href="methodology.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Méthodologie</a>
+                <a href="contact.html" class="text-muted hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">Contact</a>
+                <a href="#" class="bg-gradient-to-r from-primary to-secondary text-surface block px-3 py-2 rounded-md text-base font-medium">Nouveautés</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-20">
+        <!-- Author & Update Info Section -->
+        <div class="card-professional p-6 mb-12 bg-accent/5 border-l-4 border-secondary">
+            <div class="flex items-start justify-between flex-wrap gap-4">
+                <div>
+                    <p class="text-sm text-muted mb-2">
+                        <strong class="text-primary">Écrit par :</strong> <span class="font-semibold">Sylvère Kinox</span>
+                        <br><span class="text-xs">Passionné de café depuis 15 ans • Testeur indépendant</span>
+                    </p>
+                    <p class="text-sm text-muted">
+                        <strong class="text-secondary">Article mis à jour :</strong> {{lastUpdated}}<br>
+                        <span class="text-xs">Basé sur test personnel + avis clients vérifiés</span>
+                    </p>
+                </div>
+                <div class="text-right">
+                    <p class="text-xs text-muted mb-2">🔬 Test méthodique</p>
+                    <a href="methodology.html" class="text-secondary text-sm underline hover:text-primary transition">
+                        Voir notre méthodologie
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" class="mb-8">
+            <ol class="flex items-center space-x-2 text-sm text-muted">
+                <li><a href="index.html" class="hover:text-secondary">Accueil</a></li>
+                <li><span class="text-muted">/</span></li>
+                <li><a href="top10.html" class="hover:text-secondary">Top 10</a></li>
+                <li><span class="text-muted">/</span></li>
+                <li><span class="text-primary">{{title}}</span></li>
+            </ol>
+        </nav>
+        <div class="text-center mb-12 animate-fade-in">
+            <h1 class="text-5xl font-bold text-primary mb-4">Test : {{title}} — avis complet</h1>
+            <p class="text-xl text-muted mb-6">{{shortExcerpt}}</p>
+            <div class="flex items-center justify-center">
+                <span class="text-warning text-2xl">★★★★★</span>
+                <span class="ml-4 text-muted">{{rating}}</span>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <div class="card-professional p-8 text-center">
+                <img loading="lazy" src="{{image}}" alt="{{title}}" class="w-full h-auto rounded-lg mb-6" width="949" height="1079">
+                <p class="text-2xl font-semibold mb-4">Prix actuel : {{price}}</p>
+                <a href="{{affiliateLink}}" class="btn-primary-professional mb-4 inline-block" target="_blank" rel="nofollow sponsored noopener noreferrer">Acheter sur Amazon</a>
+                <span class="inline-block bg-orange-500 text-white font-bold px-3 py-1 rounded text-sm">{{firstFeature}}</span>
+            </div>
+            <div>
+                <h2 class="text-3xl font-semibold text-primary mb-8">Caractéristiques Techniques</h2>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    {{featuresHtml}}
+                </div>
+                <h2 class="text-3xl font-semibold text-primary mb-6">Notre Note Détaillée</h2>
+                <div class="space-y-4">
+                    <!-- placeholder bars, could be generated separately -->
+                </div>
+            </div>
+        </div>
+        {{content}}
+    </main>
+    <footer class="text-center py-12 text-muted text-sm">
+        © 2026 Expert Cafetière. Tous droits réservés.
+    </footer>
+</body>
+</html>

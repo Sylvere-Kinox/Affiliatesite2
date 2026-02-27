@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ninja-luxe-premier",
+    "title": "Ninja Luxe Premier Machine à café Espresso",
+    "slug": "ninja-luxe-premier.html",
+    "description": "Test et avis de la Ninja Luxe Premier : broyeur à grains, mousseur double action et recommandations de mouture.",
+    "price": "543,99€",
+    "affiliateLink": "https://amzn.to/4qWQZHD",
+    "image": "images/ninja-luxe-premier.jpg",
+    "keywords": "Ninja Luxe Premier, espresso, broyeur intégré, mousseur latte, avis 2026",
+    "features": [
+      "Recommandation de mouture",
+      "Broyeur à grains intégré",
+      "Mousseur à lait double action",
+      "Design métallique élégant"
+    ],
+    "shortExcerpt": "Ninja Luxe Premier — espresso avec broyeur intégré et mousseur double action, recommandé pour les amateurs exigeants.",
+    "rating": "4.5/5",
+    "lastUpdated": "27 Février 2026"
+  },
+  {
+    "id": "philips-senseo-original-plus",
+    "title": "Philips SENSEO Original Plus Machine à Café à Dosettes",
+    "slug": "philips-senseo-original-plus.html",
+    "description": "Une cafetière dosettes simple et éco‑responsable : 1 ou 2 tasses, Booster d’Arômes et plastique recyclé.",
+    "price": "64,00€",
+    "affiliateLink": "https://amzn.to/40F27xP",
+    "image": "images/philips-senseo-original-plus.jpg",
+    "keywords": "Philips Senseo Original Plus, dosettes, booster arômes, plastique recyclé",
+    "features": [
+      "Prépare 1 ou 2 tasses",
+      "Booster d’Arômes",
+      "Crème Plus",
+      "Intensité réglable",
+      "Plastique recyclé"
+    ],
+    "shortExcerpt": "Cafetière Senseo Original Plus : pratique, économique et plus verte grâce à son plastique recyclé.",
+    "rating": "4.3/5",
+    "lastUpdated": "27 Février 2026"
+  },
+  {
+    "id": "philips-senseo-select",
+    "title": "Philips Senseo Select Machine à Café à Dosettes",
+    "slug": "philips-senseo-select.html",
+    "description": "Senseo Select : 3 intensités, fonction mémo, eco‑responsable avec 37% de plastique d’origine biologique.",
+    "price": "89,99€",
+    "affiliateLink": "https://amzn.to/4tZX7S3",
+    "image": "images/philips-senseo-select.jpg",
+    "keywords": "Philips Senseo Select, dosettes, intensités, eco responsable",
+    "features": [
+      "Intensity Plus",
+      "Fonction Mémo",
+      "3 intensités",
+      "Crema Plus",
+      "Produit Eco-Responsable (37% plastique bio)"
+    ],
+    "shortExcerpt": "La Senseo Select combine personnalisation et engagement vert pour les fans de capsules.",
+    "rating": "4.4/5",
+    "lastUpdated": "27 Février 2026"
+  },
+  {
+    "id": "ninja-luxe-pro",
+    "title": "Ninja Machine à café Luxe Pro 3-en-1",
+    "slug": "ninja-luxe-pro.html",
+    "description": "Latte, Cappuccino, Infusion à froid et Espresso avec broyeur et mousseur intégrés, 5 préréglages mousse.",
+    "price": "554,14€",
+    "affiliateLink": "https://amzn.to/4aQD8MQ",
+    "image": "images/ninja-luxe-pro.jpg",
+    "keywords": "Ninja Luxe Pro, 3-en-1, latte, cappuccino, infusion froide, broyeur intégré",
+    "features": [
+      "Latte, Cappuccino, Infusion à froid et Espresso",
+      "Broyeur à grains intégré",
+      "Mousseur à lait intégré",
+      "5 préréglages mousse",
+      "Utilisation facile"
+    ],
+    "shortExcerpt": "La Ninja Luxe Pro 3-en-1 est une machine polyvalente pour tous types de boissons, parfaite pour les foyers exigeants.",
+    "rating": "4.6/5",
+    "lastUpdated": "27 Février 2026"
+  },
+  {
+    "id": "cafetiere-silencieuse-bureau",
+    "title": "Cafetière silencieuse pour bureau — Guide complet",
+    "slug": "cafetiere-silencieuse-bureau.html",
+    "description": "Un dossier SEO ultra-complet sur les cafetières silencieuses adaptées aux bureaux et open spaces.",
+    "price": "",
+    "affiliateLink": "",
+    "image": "images/cafetiere-silencieuse-bureau.jpg",
+    "keywords": "cafetiere silencieuse, bureau, open space, guide achat",
+    "features": [
+      "Fonctionnement ultra-silencieux",
+      "Design compact",
+      "Entretien facile",
+      "Options programmable",
+      "Qualité du café adaptée au travail"
+    ],
+    "shortExcerpt": "Tout ce qu'il faut savoir pour choisir la meilleure cafetière silencieuse en entreprise.",
+    "rating": "",
+    "lastUpdated": "27 Février 2026"
+  }
+]

@@ -196,4 +196,50 @@ function initSearch(){
 }
 document.addEventListener('DOMContentLoaded', initSearch);
 
+
+// ------------------------------------------------------------------
+// Affiliate CTA A/B testing & analytics
+// ------------------------------------------------------------------
+function initAffiliateCTA() {
+    const ctaLink = document.querySelector('.sticky-cta a');
+    if (!ctaLink) return;
+    // store original price if present
+    const originalText = ctaLink.textContent.trim();
+    const priceMatch = originalText.match(/([0-9]+[.,]?[0-9]*€)/);
+    const price = priceMatch ? priceMatch[1] : '';
+    // define variants
+    const variants = [
+        `Acheter maintenant ${price}`,
+        'Voir le prix sur Amazon →'
+    ];
+    // choose random variant (50/50)
+    const choice = Math.random() < 0.5 ? 0 : 1;
+    ctaLink.textContent = variants[choice];
+    ctaLink.dataset.ctaVariant = choice === 0 ? 'buy_now' : 'view_price';
+
+    // click tracking
+    ctaLink.addEventListener('click', function () {
+        const variant = this.dataset.ctaVariant || 'unknown';
+        const eventData = {
+            event: 'affiliate_cta_click',
+            cta_variant: variant,
+            cta_text: this.textContent,
+            href: this.href
+        };
+        if (window.dataLayer) {
+            window.dataLayer.push(eventData);
+        }
+        if (typeof gtag === 'function') {
+            gtag('event', 'affiliate_cta_click', {
+                'cta_variant': variant,
+                'cta_text': this.textContent,
+                'link': this.href
+            });
+        }
+    });
+}
+
+// call on DOMContentLoaded so it runs after CTA is inserted
+document.addEventListener('DOMContentLoaded', initAffiliateCTA);
+
 if ('serviceWorker' in navigator){ window.addEventListener('load', ()=> { navigator.serviceWorker.register('/sw.js').then(registration => { console.log('Service Worker enregistré avec succès:', registration); }).catch(error => { console.log('Échec de l\'enregistrement du Service Worker:', error); }); }); }
