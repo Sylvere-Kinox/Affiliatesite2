@@ -1,225 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://expert-cafetiere.eu/</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/index.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/top10.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/comparator.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/blog.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/faq.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/product.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/jura-e8.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/saeco-picobaristo.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/siemens-eq9-s500.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/philips-serie-5000.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/philips-series-3200.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/delonghi-dinamica.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/nespresso-vertuo-next.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/breville-barista-express.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/krups-evidence-ea815b.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/legal.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/tendances-cafe-2026.html</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guest-article-3.html</loc>
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/capsules-vs-grains.html</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guide-espresso-extraction.html</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/automatiques-vs-manuelles.html</loc>
-    <lastmod>2026-02-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/about.html</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/contact.html</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/methodology.html</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/krups-evidence-seo.html</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/philips-serie-5500-lattego.html</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guest-article-1.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guest-article-2.html</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guest-article-4.html</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/guest-article-5.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/nouveautes.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/cafetiere-silencieuse-bureau.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/ninja-luxe-premier.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/philips-senseo-original-plus.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/philips-senseo-select.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://expert-cafetiere.eu/ninja-luxe-pro.html</loc>
-    <lastmod>2026-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/index.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/top10.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/comparator.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/blog.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/faq.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/product.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/jura-e8.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/siemens-eq9-s500.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/philips-serie-5000.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/philips-series-3200.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/delonghi-dinamica.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/nespresso-vertuo-next.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/breville-barista-express.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/krups-evidence-ea815b.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/legal.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.3</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/tendances-cafe-2026.html</loc>
+  <lastmod>2026-01-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guest-article-1.html</loc>
+  <lastmod>2026-01-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guest-article-2.html</loc>
+  <lastmod>2026-01-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guest-article-3.html</loc>
+  <lastmod>2026-01-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guest-article-4.html</loc>
+  <lastmod>2026-02-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guest-article-5.html</loc>
+  <lastmod>2026-02-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/capsules-vs-grains.html</loc>
+  <lastmod>2026-02-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/guide-espresso-extraction.html</loc>
+  <lastmod>2026-02-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/automatiques-vs-manuelles.html</loc>
+  <lastmod>2026-02-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/about.html</loc>
+  <lastmod>2026-02-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/contact.html</loc>
+  <lastmod>2026-02-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/methodology.html</loc>
+  <lastmod>2026-02-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/krups-evidence-seo.html</loc>
+  <lastmod>2026-02-23</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/philips-serie-5500-lattego.html</loc>
+  <lastmod>2026-02-23</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/nouveautes.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/cafetiere-silenceuse-bureau.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/ninja-luxe-premier.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/ninja-luxe-pro.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/philips-senseo-original-plus.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://expert-cafetiere.eu/philips-senseo-select.html</loc>
+  <lastmod>2026-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
 </urlset>
