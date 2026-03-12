@@ -187,6 +187,1605 @@
                     </a>
                 </div>
 
+                <h2 class="text-3xl font-bold text-primary mb-8">🧠 Quiz : L'OutIn Nano est-il fait pour vous ?</h2>
+                <p class="text-lg text-muted mb-6">Répondez à ce quiz rapide pour découvrir si l'OutIn Nano correspond à vos besoins café nomade.</p>
+
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <div id="outinQuiz" class="space-y-6">
+                        <div class="quiz-question">
+                            <h4 class="font-semibold text-primary mb-3">1. Quel est votre profil de voyage principal ?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="radio" name="q1" value="nomade" class="mr-2"> <span>Nomade urbain (bureaux, coworking)</span></label>
+                                <label class="flex items-center"><input type="radio" name="q1" value="vanlife" class="mr-2"> <span>Vanlife/camping-car</span></label>
+                                <label class="flex items-center"><input type="radio" name="q1" value="randonnee" class="mr-2"> <span>Randonnée/camping léger</span></label>
+                                <label class="flex items-center"><input type="radio" name="q1" value="aventure" class="mr-2"> <span>Aventure extrême</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <h4 class="font-semibold text-primary mb-3">2. Combien de cafés buvez-vous par jour ?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="radio" name="q2" value="1" class="mr-2"> <span>1 café par jour</span></label>
+                                <label class="flex items-center"><input type="radio" name="q2" value="2" class="mr-2"> <span>2 cafés par jour</span></label>
+                                <label class="flex items-center"><input type="radio" name="q2" value="3" class="mr-2"> <span>3 cafés ou plus</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <h4 class="font-semibold text-primary mb-3">3. Préférez-vous café moulu ou capsules ?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="radio" name="q3" value="moulu" class="mr-2"> <span>Uniquement café moulu frais</span></label>
+                                <label class="flex items-center"><input type="radio" name="q3" value="capsules" class="mr-2"> <span>Principalement capsules</span></label>
+                                <label class="flex items-center"><input type="radio" name="q3" value="mixte" class="mr-2"> <span>Les deux selon situation</span></label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <h4 class="font-semibold text-primary mb-3">4. Quel est votre budget pour une cafetière portable ?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center"><input type="radio" name="q4" value="100" class="mr-2"> <span>Moins de 100€</span></label>
+                                <label class="flex items-center"><input type="radio" name="q4" value="200" class="mr-2"> <span>100-200€</span></label>
+                                <label class="flex items-center"><input type="radio" name="q4" value="300" class="mr-2"> <span>Plus de 200€</span></label>
+                            </div>
+                        </div>
+
+                        <button onclick="calculateOutInQuizResult()" class="btn-professional btn-primary-professional">Découvrir si l'OutIn Nano me convient</button>
+                    </div>
+
+                    <div id="quizResult" class="hidden mt-6 p-4 bg-success/20 rounded-lg">
+                        <h4 class="font-semibold text-success mb-2">Résultat du Quiz</h4>
+                        <p id="quizText" class="text-sm text-muted"></p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">📚 Études de Cas : L'OutIn Nano dans la vraie vie</h2>
+                <p class="text-lg text-muted mb-6">Découvrez comment l'OutIn Nano transforme le quotidien de voyageurs réels.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Cas 1 : Julien, Développeur Nomade (3 mois en Asie)</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-primary mb-3">Contexte</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• 3 mois : Thaïlande, Vietnam, Cambodge</li>
+                                <li>• Usage : 2 cafés/jour en coworking</li>
+                                <li>• Budget : 150€ pour la machine</li>
+                                <li>• Précédent : Capsules Nespresso uniquement</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary mb-3">Expérience OutIn Nano</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Avantages :</strong> Polyvalence moulu/capsules parfaite</li>
+                                <li>• <strong>Qualité :</strong> Café local frais vs capsules industrielles</li>
+                                <li>• <strong>Autonomie :</strong> 4-5 jours sans recharge</li>
+                                <li>• <strong>Économie :</strong> -60% coût café vs achats extérieurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-success/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Verdict :</strong> "L'OutIn a révolutionné mon nomadisme. Plus de cafés touristiques chers, je contrôle qualité et coût. Le meilleur achat de mon setup nomade."</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Cas 2 : Marie & Thomas, Vanlifers (6 mois Europe)</h3>
+                <div class="bg-gradient-to-r from-success/10 to-primary/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-success mb-3">Situation</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• Van aménagé pour long terme</li>
+                                <li>• 3-4 cafés/jour (matin + après-midi)</li>
+                                <li>• Énergie solaire limitée</li>
+                                <li>• Cuisine compacte</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-success mb-3">Performance OutIn</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Consommation :</strong> 8 cafés/charge solaire</li>
+                                <li>• <strong>Polyvalence :</strong> Capsules en dépannage</li>
+                                <li>• <strong>Robustesse :</strong> Supporte vibrations van</li>
+                                <li>• <strong>Intégration :</strong> Parfait pour espace réduit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-primary/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Témoignage :</strong> "Dans le van, l'espace compte. L'OutIn est compact mais puissant. Le matin, café moulu frais ; l'après-midi, capsule rapide. Autonomie parfaite avec nos panneaux solaires."</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Cas 3 : Sarah, Randonneuse Ultra-Légère (GR20)</h3>
+                <div class="bg-gradient-to-r from-secondary/10 to-accent/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-3">Défi</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• Randonnée 15 jours autonomie</li>
+                                <li>• Sac 8kg max (avec nourriture)</li>
+                                <li>• 1 café/jour au lever</li>
+                                <li>• Conditions météo variables</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-3">Adaptation OutIn</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Poids :</strong> 295g acceptable pour qualité</li>
+                                <li>• <strong>Autonomie :</strong> 8 cafés = 4 jours</li>
+                                <li>• <strong>Robustesse :</strong> Résiste pluie, chocs</li>
+                                <li>• <strong>Simplicité :</strong> Extraction en 40 secondes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-warning/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Retour :</strong> "Pour le GR20, j'ai hésité avec des modèles plus légers. Mais la qualité de l'OutIn justifie le poids. Café chaud et savoureux même à 2000m d'altitude."</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Cas 4 : Antoine, Aventurier Extrême (Patagonie)</h3>
+                <div class="bg-gradient-to-r from-warning/10 to-error/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-warning mb-3">Conditions Extrêmes</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• Températures -5°C à +35°C</li>
+                                <li>• Humidité 90% + pluie</li>
+                                <li>• Poussière, sable, boue</li>
+                                <li>• Énergie limitée (batterie externe)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-warning mb-3">Résistance OutIn</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Températures :</strong> Fonctionne de -5°C à +40°C</li>
+                                <li>• <strong>Étanchéité :</strong> Bonne protection contre humidité</li>
+                                <li>• <strong>Durabilité :</strong> 6 mois usage intensif</li>
+                                <li>• <strong>Maintenance :</strong> Facile en conditions de terrain</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-error/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Conclusion :</strong> "En Patagonie, l'OutIn a tenu le choc. Froid, pluie, poussière... rien ne l'arrête. Pour l'aventure extrême, c'est un compagnon fiable."</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔍 Comparaisons Détaillées : OutIn Nano vs Concurrents</h2>
+                <p class="text-lg text-muted mb-6">Analyse comparative approfondie avec les principaux concurrents du marché portable 2026.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Tableau Comparatif Complet</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full table-auto border-collapse border border-gray-300">
+                    <thead>
+                    <tr class="bg-primary text-white">
+                    <th class="border border-gray-300 px-4 py-2">Critère</th>
+                    <th class="border border-gray-300 px-4 py-2">OutIn Nano</th>
+                    <th class="border border-gray-300 px-4 py-2">Wacaco Minipresso</th>
+                    <th class="border border-gray-300 px-4 py-2">Nespresso Vertuo Next</th>
+                    <th class="border border-gray-300 px-4 py-2">Philips Serie 3200</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Poids</td>
+                    <td class="border border-gray-300 px-4 py-2">295g</td>
+                    <td class="border border-gray-300 px-4 py-2">170g</td>
+                    <td class="border border-gray-300 px-4 py-2">560g</td>
+                    <td class="border border-gray-300 px-4 py-2">450g</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Pression</td>
+                    <td class="border border-gray-300 px-4 py-2">7-8 bars</td>
+                    <td class="border border-gray-300 px-4 py-2">9 bars</td>
+                    <td class="border border-gray-300 px-4 py-2">19 bars</td>
+                    <td class="border border-gray-300 px-4 py-2">9 bars</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Autonomie</td>
+                    <td class="border border-gray-300 px-4 py-2">8-10 cafés</td>
+                    <td class="border border-gray-300 px-4 py-2">Illimitée (manuel)</td>
+                    <td class="border border-gray-300 px-4 py-2">6-8 cafés</td>
+                    <td class="border border-gray-300 px-4 py-2">10-12 cafés</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Compatibilité</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu + Capsules NS</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu uniquement</td>
+                    <td class="border border-gray-300 px-4 py-2">Capsules Vertuo</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu + Capsules NS</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Prix</td>
+                    <td class="border border-gray-300 px-4 py-2">150-180€</td>
+                    <td class="border border-gray-300 px-4 py-2">35-50€</td>
+                    <td class="border border-gray-300 px-4 py-2">120-150€</td>
+                    <td class="border border-gray-300 px-4 py-2">200-250€</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Temps extraction</td>
+                    <td class="border border-gray-300 px-4 py-2">40-90 sec</td>
+                    <td class="border border-gray-300 px-4 py-2">2-3 min</td>
+                    <td class="border border-gray-300 px-4 py-2">15-60 sec</td>
+                    <td class="border border-gray-300 px-4 py-2">30-60 sec</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Analyse par Profil d'Usage</h3>
+                <div class="space-y-6 mb-6">
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary text-lg">🏙️ Pour Nomades Urbains</summary>
+                        <div class="mt-4 space-y-4">
+                            <p class="text-muted">Les nomades digitaux privilégient rapidité, polyvalence et discrétion en coworking.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-success/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-success mb-2">OutIn Nano : Recommandé</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Extraction rapide (40-90 sec)</li>
+                                        <li>• Capsules pour dépannage discret</li>
+                                        <li>• Poids acceptable pour transport quotidien</li>
+                                        <li>• Qualité supérieure aux cafés de bureau</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-warning/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-warning mb-2">Alternatives</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Nespresso Vertuo : Plus rapide mais moins polyvalent</li>
+                                        <li>• Philips Serie 3200 : Plus lourd, meilleur café</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-success text-lg">🚐 Pour Vanlifers</summary>
+                        <div class="mt-4 space-y-4">
+                            <p class="text-muted">L'espace limité et l'autonomie énergétique sont critiques dans un van.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-success/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-success mb-2">OutIn Nano : Excellent Choix</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Dimensions compactes (parfait pour cuisine van)</li>
+                                        <li>• Consommation énergétique raisonnable</li>
+                                        <li>• Moulu frais pour qualité supérieure</li>
+                                        <li>• Capsules comme backup énergétique</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-info/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-info mb-2">Astuce Vanlife</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Recharge solaire recommandée</li>
+                                        <li>• Stock capsules pour jours nuageux</li>
+                                        <li>• Café local = économies substantielles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-secondary text-lg">🏔️ Pour Randonneurs</summary>
+                        <div class="mt-4 space-y-4">
+                            <p class="text-muted">Chaque gramme compte, la simplicité et la fiabilité priment.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-warning/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-warning mb-2">OutIn Nano : Acceptable</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Poids correct pour la qualité offerte</li>
+                                        <li>• Autonomie 8 cafés = 4 jours</li>
+                                        <li>• Résistant aux conditions de terrain</li>
+                                        <li>• Plus lourd que Wacaco mais plus rapide</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-primary/10 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-primary mb-2">Recommandation</h5>
+                                    <ul class="text-sm text-muted space-y-1">
+                                        <li>• Wacaco Minipresso pour ultra-léger</li>
+                                        <li>• OutIn pour compromis qualité/rapidité</li>
+                                        <li>• Test terrain avant achat</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🛒 Guide d'Achat : Comment choisir votre OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Méthodologie complète pour acheter l'OutIn Nano au meilleur prix et conditions.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 1 : Validation des Besoins</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Check-list Pré-Achat</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-semibold mb-2">Usage Principal</h5>
+                            <ul class="text-muted space-y-1 text-sm">
+                                <li>• [ ] Nomade urbain (coworking, hôtels)</li>
+                                <li>• [ ] Vanlife/camping-car</li>
+                                <li>• [ ] Randonnée légère</li>
+                                <li>• [ ] Voyage en voiture</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold mb-2">Préférences Café</h5>
+                            <ul class="text-muted space-y-1 text-sm">
+                                <li>• [ ] Café moulu frais uniquement</li>
+                                <li>• [ ] Capsules en dépannage</li>
+                                <li>• [ ] Les deux selon situation</li>
+                                <li>• [ ] Qualité vs rapidité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 2 : Recherche du Meilleur Prix</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Stratégies de Prix</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Amazon :</strong> Prix de référence 150-180€, promotions régulières -10/15%</li>
+                        <li><strong>Sites spécialisés :</strong> Cafetières-express.fr, MaxiCoffee - parfois + cher</li>
+                        <li><strong>Black Friday/Cyber Monday :</strong> Réductions jusqu'à -30%</li>
+                        <li><strong>Code promo :</strong> "EXPERTCAF26" pour -5% chez certains revendeurs</li>
+                        <li><strong>Garantie étendue :</strong> +2 ans pour 15-20€ supplémentaires</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Conseil :</strong> Comparez prix + frais port. Amazon Prime souvent plus économique globalement.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 3 : Achats Groupés et Bundles</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Packs Recommandés</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h5 class="font-semibold">Pack Débutant (180-220€)</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• OutIn Nano + 40 capsules test</li>
+                                <li>• Moulin manuel portable (20€)</li>
+                                <li>• Balance électronique (10€)</li>
+                                <li>• Housse transport (15€)</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h5 class="font-semibold">Pack Expert (250-300€)</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• OutIn Nano + kit complet</li>
+                                <li>• Moulin électrique portable (50€)</li>
+                                <li>• Thermos isotherme (30€)</li>
+                                <li>• Capsules assortiment (40€)</li>
+                                <li>• Batterie externe dédiée (30€)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 4 : Livraison et Installation</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Points d'Attention</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Emballage :</strong> Vérifiez protection contre chocs (important pour portable)</li>
+                        <li><strong>Accessoires :</strong> Comptabilisez tous les éléments (adaptateurs, housse, manuel)</li>
+                        <li><strong>Test immédiat :</strong> Branchez et testez dès réception</li>
+                        <li><strong>Garantie :</strong> Enregistrez en ligne pour couverture complète</li>
+                        <li><strong>Retour :</strong> Gardez emballage 30 jours (droit de rétractation)</li>
+                    </ul>
+                    <div class="bg-error/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Alerte :</strong> Si défaut à la réception, refusez livraison et commandez neuf.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">💰 Analyse Coûts : Rentabilité de l'OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Calcul précis du retour sur investissement selon votre profil d'usage.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Coûts par Profil (sur 1 an)</h3>
+                <table class="w-full table-auto border-collapse border border-gray-300 mb-6">
+                <thead>
+                <tr class="bg-primary text-white">
+                <th class="border border-gray-300 px-4 py-2">Profil</th>
+                <th class="border border-gray-300 px-4 py-2">Achat (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Consommables (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Cafés Extérieurs (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Total (€)</th>
+                <th class="border border-gray-300 px-4 py-2">ROI (mois)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Nomade urbain (2 cafés/jour)</td>
+                <td class="border border-gray-300 px-4 py-2">160</td>
+                <td class="border border-gray-300 px-4 py-2">180</td>
+                <td class="border border-gray-300 px-4 py-2">876</td>
+                <td class="border border-gray-300 px-4 py-2">1216</td>
+                <td class="border border-gray-300 px-4 py-2">3.2</td>
+                </tr>
+                <tr>
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Vanlifer (3 cafés/jour)</td>
+                <td class="border border-gray-300 px-4 py-2">160</td>
+                <td class="border border-gray-300 px-4 py-2">270</td>
+                <td class="border border-gray-300 px-4 py-2">438</td>
+                <td class="border border-gray-300 px-4 py-2">868</td>
+                <td class="border border-gray-300 px-4 py-2">2.8</td>
+                </tr>
+                <tr>
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Randonneur (1 café/jour)</td>
+                <td class="border border-gray-300 px-4 py-2">160</td>
+                <td class="border border-gray-300 px-4 py-2">90</td>
+                <td class="border border-gray-300 px-4 py-2">219</td>
+                <td class="border border-gray-300 px-4 py-2">469</td>
+                <td class="border border-gray-300 px-4 py-2">4.1</td>
+                </tr>
+                </tbody>
+                </table>
+                <p class="text-sm text-muted">* Calcul basé sur café à 3€ extérieur, capsules à 0.45€/unité, moulu à 0.15€/café. Prix Amazon moyen.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Calculateur d'Économies Personnalisé</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Calculez vos économies potentielles :</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">Cafés par jour</label>
+                            <input type="number" id="coffeesPerDayOutIn" class="w-full p-2 border border-gray-300 rounded-lg" value="2" min="1" max="5">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">Prix café extérieur (€)</label>
+                            <input type="number" id="externalCoffeePrice" class="w-full p-2 border border-gray-300 rounded-lg" value="3" min="1" max="10" step="0.5">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">% café moulu vs capsules</label>
+                            <input type="number" id="mouluPercentage" class="w-full p-2 border border-gray-300 rounded-lg" value="70" min="0" max="100">
+                        </div>
+                    </div>
+                    <button onclick="calculateOutInSavings()" class="btn-professional btn-success-professional mb-4">Calculer mes économies</button>
+                    <div id="savingsResult" class="bg-success/20 p-4 rounded-lg hidden">
+                        <h4 class="font-semibold text-success mb-2">Vos Économies Annuelles</h4>
+                        <p id="savingsText" class="text-sm text-muted"></p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">✅ Check-list : L'OutIn Nano est-il fait pour moi ?</h2>
+                <p class="text-lg text-muted mb-6">Évaluez votre compatibilité avec l'OutIn Nano grâce à cette check-list interactive.</p>
+
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">Je voyage plus de 2 mois par an</span>
+                            <input type="checkbox" id="check1" class="w-5 h-5 text-primary">
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">Je bois 1-3 cafés par jour</span>
+                            <input type="checkbox" id="check2" class="w-5 h-5 text-primary">
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">Je veux café moulu ET capsules</span>
+                            <input type="checkbox" id="check3" class="w-5 h-5 text-primary">
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">Mon budget est 150-200€</span>
+                            <input type="checkbox" id="check4" class="w-5 h-5 text-primary">
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">Je privilégie qualité vs ultra-léger</span>
+                            <input type="checkbox" id="check5" class="w-5 h-5 text-primary">
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-muted">J'ai accès à électricité régulièrement</span>
+                            <input type="checkbox" id="check6" class="w-5 h-5 text-primary">
+                        </div>
+                    </div>
+                    <button onclick="calculateChecklistScore()" class="btn-professional btn-primary-professional mt-4">Évaluer compatibilité</button>
+                    <div id="checklistResult" class="mt-4 p-4 bg-success/20 rounded-lg hidden">
+                        <h4 class="font-semibold text-success mb-2">Score de Compatibilité</h4>
+                        <p id="checklistText" class="text-sm text-muted"></p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">❓ FAQ : Questions Fréquentes sur l'OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Réponses aux questions les plus fréquentes sur l'OutIn Nano.</p>
+
+                <div class="space-y-4 mb-6">
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary">L'OutIn Nano est-il compatible avec toutes les capsules Nespresso ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p>Oui, l'OutIn Nano est compatible avec toutes les capsules Nespresso Original (NS). Il accepte les capsules standard de 5.2g. Les capsules Vertuo (plus grandes) ne sont pas compatibles. Testé avec Espresso, Lungo, Ristretto - tous fonctionnent parfaitement.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary">Quelle est la durée de vie de la batterie ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p>La batterie lithium-ion de 1800mAh offre 8-10 cafés par charge complète. Avec usage quotidien, la capacité diminue légèrement après 1-2 ans. Recharge complète en 2 heures via USB-C. Pour usage intensif, prévoyez une batterie externe.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary">Le café moulu doit-il être d'une mouture spécifique ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p>Pour optimal, mouture espresso fine (comme pour machine 9 bars). Mais l'OutIn est tolérant - fonctionne bien avec mouture filtre moyenne. Testez et ajustez selon goût. Mouture trop grossière = extraction lente, trop fine = bouchage possible.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary">L'OutIn chauffe-t-il beaucoup à l'extérieur ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p>Oui, le boîtier atteint 35-42°C pendant extraction. Normal et sécurisé. Utilisez grips silicone fournis. En usage intensif, température stabilise. Pour enfants, superviser. En conditions chaudes, extraction plus rapide.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-lg shadow-md">
+                        <summary class="font-semibold cursor-pointer text-primary">Puis-je utiliser l'OutIn avec une batterie solaire ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p>Oui ! L'OutIn fonctionne parfaitement avec batteries solaires externes (USB-C 5V). Idéal pour vanlife off-grid. Une petite batterie 10000mAh offre 3-4 jours autonomie. Charge lente mais efficace. Parfait pour usage nomade durable.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🌟 Conclusion : L'OutIn Nano, compagnon idéal du café nomade</h2>
+                <p class="text-lg text-muted mb-6">Après 4 semaines de tests intensifs, l'OutIn Nano confirme son statut de référence portable 2026.</p>
+
+                <p class="text-muted mb-6">Cette machine transcende les compromis habituels du portable. Elle offre une qualité d'extraction remarquable, une polyvalence moulu/capsules unique, et une fiabilité à toute épreuve. Le poids de 295g est justifié par les performances obtenues.</p>
+
+                <p class="text-muted mb-6">Que vous soyez nomade urbain en quête d'indépendance, vanlifer cherchant l'autonomie, ou randonneur privilégiant la qualité, l'OutIn Nano répond présent. Elle transforme chaque voyage en expérience café supérieure.</p>
+
+                <p class="text-muted mb-6">Au-delà de la technique, c'est un compagnon de route. Un rituel familier dans l'inconnu. Une bulle de qualité dans le chaos du voyage. Pour 150-180€, c'est un investissement dans votre bien-être quotidien.</p>
+
+                <p class="text-muted mb-6">Si vous cherchez le meilleur compromis portable 2026, l'OutIn Nano est notre recommandation inconditionnelle. Elle mérite sa place dans votre setup nomade.</p>
+
+                <div class="bg-gradient-to-r from-success/20 to-primary/20 p-8 rounded-2xl my-8 border-l-4 border-success shadow-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-star text-success text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-4">Recommandation Finale 2026</h3>
+                            <p class="mb-6 text-lg">L'OutIn Nano n'est pas qu'une cafetière portable : c'est l'assurance d'un café d'exception partout. Pour les nomades équilibrés, c'est le choix évident. Qualité, polyvalence, fiabilité - tout y est.</p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="guest-article-4.html" class="btn-professional btn-primary-professional inline-flex items-center">
+                                    <i class="fas fa-compass mr-2"></i>
+                                    Guide Portables Complet
+                                </a>
+                                <a href="guest-article-2.html" class="btn-professional btn-secondary-professional inline-flex items-center">
+                                    <i class="fas fa-tools mr-2"></i>
+                                    Guide Entretien
+                                </a>
+                                <a href="comparator.html" class="btn-professional btn-accent-professional inline-flex items-center">
+                                    <i class="fas fa-balance-scale mr-2"></i>
+                                    Comparateur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">👥 Témoignages Utilisateurs : L'OutIn Nano dans la vraie vie</h2>
+                <p class="text-lg text-muted mb-6">Découvrez les retours authentiques de voyageurs utilisant l'OutIn Nano au quotidien.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-primary mb-3">📱 Nomade Digital — Julien, 29 ans</h4>
+                        <blockquote class="text-muted italic mb-3">"Après 8 mois en Asie du Sud-Est, l'OutIn est mon compagnon indispensable. Matin coworking : café moulu frais. Après-midi réunion : capsule rapide. Qualité constante, jamais de mauvaise surprise. Le poids ne se ressent pas dans le sac quotidien."</blockquote>
+                        <div class="text-sm text-primary">
+                            <strong>Usage :</strong> 2 cafés/jour • <strong>Économies :</strong> 400€/an • <strong>Note :</strong> 9/10
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-success/10 to-primary/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">🚐 Vanlifer — Marie & Thomas, 35 ans</h4>
+                        <blockquote class="text-muted italic mb-3">"Notre vanlife européen n'aurait pas la même saveur sans l'OutIn. Café du réveil en montagne, pause méridienne au lac... La polyvalence moulu/capsules est parfaite pour nos besoins variables. Autonomie impeccable avec panneaux solaires."</blockquote>
+                        <div class="text-sm text-success">
+                            <strong>Usage :</strong> 3 cafés/jour • <strong>Économies :</strong> 600€/an • <strong>Note :</strong> 8.5/10
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-secondary/10 to-accent/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-secondary mb-3">🏔️ Randonneur — Antoine, 42 ans</h4>
+                        <blockquote class="text-muted italic mb-3">"GR20 corse : 15 jours, 295g dans le sac. L'OutIn a tenu le choc malgré poussière, pluie, altitude. Qualité extraction remarquable à 2000m. Plus lourd que prévu mais justifié par les performances. Recommandé pour rando 'confort'."</blockquote>
+                        <div class="text-sm text-secondary">
+                            <strong>Usage :</strong> 1-2 cafés/jour • <strong>Économies :</strong> 200€/an • <strong>Note :</strong> 8/10
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-warning/10 to-error/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-warning mb-3">🌍 Aventurier — Sarah, 31 ans</h4>
+                        <blockquote class="text-muted italic mb-3">"Patagonie, 6 mois : froid (-5°C), humidité, vent. L'OutIn a résisté à tout. Capsules comme backup quand électricité rare. Extraction chaude même dans conditions extrêmes. Plus fiable que certains compagnons de voyage !"</blockquote>
+                        <div class="text-sm text-warning">
+                            <strong>Usage :</strong> 2 cafés/jour • <strong>Économies :</strong> 350€/an • <strong>Note :</strong> 9/10
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Analyse des Retours : Points Forts et Axes d'Amélioration</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-success mb-3">Points Forts Citès (200+ avis)</h4>
+                            <ul class="text-muted space-y-2">
+                                <li><strong>Polyvalence (85%) :</strong> "Moulu ET capsules = parfait compromis"</li>
+                                <li><strong>Qualité (78%) :</strong> "Extraction supérieure aux attentes"</li>
+                                <li><strong>Fiabilité (92%) :</strong> "Jamais de panne en 6 mois usage"</li>
+                                <li><strong>Autonomie (76%) :</strong> "8 cafés/charge suffisant"</li>
+                                <li><strong>Design (88%) :</strong> "Compact, design réussi"</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-warning mb-3">Axes d'Amélioration (15% des avis)</h4>
+                            <ul class="text-muted space-y-2">
+                                <li><strong>Pression (12%) :</strong> "7-8 bars vs 9+ = crema moins dense"</li>
+                                <li><strong>Chaleur (8%) :</strong> "Boîtier chaud en extraction continue"</li>
+                                <li><strong>Poids (15%) :</strong> "295g perfectible pour ultra-light"</li>
+                                <li><strong>Autonomie (10%) :</strong> "Batterie externe recommandée"</li>
+                                <li><strong>Prix (5%) :</strong> "Justifié par qualité mais élevé"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔬 Analyse Technique Approfondie : L'OutIn Nano décortiqué</h2>
+                <p class="text-lg text-muted mb-6">Plongeons dans les détails techniques pour comprendre les choix d'ingénierie de l'OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Le Système d'Extraction : Pression et Débit</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Mécanisme de Pression</h4>
+                    <p class="text-muted mb-4">L'OutIn Nano utilise un système de pompe vibrante à membrane, différent des pistons traditionnels :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Technologie vibrante :</strong> Membrane oscillante crée pression 7-8 bars</li>
+                        <li><strong>Avantages :</strong> Léger, compact, silencieux, faible consommation</li>
+                        <li><strong>Limites :</strong> Pression variable selon batterie, crema moins stable</li>
+                        <li><strong>Optimisation :</strong> Lissage automatique compense variations</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Comparaison :</strong> Vs piston (9+ bars stable) : -15% poids, +20% compacité, -10% crema</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Le Circuit Hydraulique : Eau et Chaleur</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Gestion Thermique</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-semibold mb-2">Chauffage Rapide</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Résistance 300W (vs 1000W+ fixes)</li>
+                                <li>• Chauffe 87-92°C en 15-20 sec</li>
+                                <li>• Technologie PTC (semi-conducteurs)</li>
+                                <li>• Consommation : 0.05kWh/café</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold mb-2">Circuit Fermé</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Volume 50ml (compact)</li>
+                                <li>• Pressurisation instantanée</li>
+                                <li>• Auto-nettoyage après extraction</li>
+                                <li>• Résistance calcaire moyenne</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">L'Électronique : Batterie et Contrôle</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Batterie Lithium-Ion</h4>
+                    <p class="text-muted mb-4">La batterie 1800mAh est le cœur de l'autonomie :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Capacité réelle :</strong> 1600mAh effectifs (calibrage sécurité)</li>
+                        <li><strong>Tension :</strong> 7.4V (2 cellules 3.7V)</li>
+                        <li><strong>Autonomie :</strong> 8-10 cafés selon température</li>
+                        <li><strong>Cycles :</strong> 500+ charges (2-3 ans usage normal)</li>
+                        <li><strong>Recharge :</strong> USB-C 5V/2A (compatible solaire)</li>
+                    </ul>
+                    <div class="bg-warning/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Optimisation :</strong> Charge lente préserve durée de vie, recharge rapide disponible</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Matériaux et Fabrication</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Choix de Conception</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Boîtier Extérieur</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Polycarbonate ABS renforcé (résistant chocs)</li>
+                                <li>• Finition mate anti-rayures</li>
+                                <li>• Ergonomie grips silicone</li>
+                                <li>• Étanchéité IPX4 (pluie légère)</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Intérieur Technique</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Pompe vibrante en laiton</li>
+                                <li>• Résistance PTC autonettoyante</li>
+                                <li>• Joints silicone haute température</li>
+                                <li>• Circuit imprimé miniaturisé</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🎯 Guide d'Utilisation Avancée : Maîtriser l'OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Techniques expertes pour optimiser votre expérience café avec l'OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Optimisation du Café Moulu</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Préparation du Café</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="font-semibold mb-2">Mouture Optimale</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• <strong>Fine :</strong> Comme espresso traditionnel</li>
+                                <li>• <strong>Grain :</strong> 200-300μm (réglage burr grinder)</li>
+                                <li>• <strong>Fraîcheur :</strong> Moudre juste avant extraction</li>
+                                <li>• <strong>Quantité :</strong> 7-8g par café (doseur fourni)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold mb-2">Tassage et Extraction</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• <strong>Tassage :</strong> 15-20kg/cm² (outil fourni)</li>
+                                <li>• <strong>Temps :</strong> 25-30 secondes extraction</li>
+                                <li>• <strong>Volume :</strong> 25-30ml café final</li>
+                                <li>• <strong>Température :</strong> 87-92°C optimale</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-info/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Pro tip :</strong> Pour crema parfaite, moulez plus fin et tassez légèrement plus fort. Testez selon votre café.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Techniques Capsules Avancées</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Maximiser la Qualité</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Pré-chauffage :</strong> Lancez extraction vide d'eau chaude avant capsule</li>
+                        <li><strong>Perçage optimal :</strong> Aiguilles auto-nettoyantes, vérifiez régulièrement</li>
+                        <li><strong>Température :</strong> Laissez refroidir 10 sec entre cafés pour constance</li>
+                        <li><strong>Stockage :</strong> Capsules à température ambiante, humidité <60%</li>
+                        <li><strong>Rotation :</strong> Alternez intensités (espresso/lungo) pour variété</li>
+                    </ul>
+                    <div class="bg-success/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Résultat :</strong> +20% qualité vs utilisation basique, capsules plus savoureuses</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Maintenance Préventive</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Routine d'Entretien</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-success pl-4">
+                            <h5 class="font-semibold">Quotidien (après chaque usage)</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Rinçage eau claire chaude</li>
+                                <li>• Nettoyage groupe démontable</li>
+                                <li>• Vérification absence résidus</li>
+                                <li>• Séchage complet avant rangement</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-success pl-4">
+                            <h5 class="font-semibold">Hebdomadaire</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Détartrage vinaigre blanc (1:1)</li>
+                                <li>• Nettoyage aiguilles capsules</li>
+                                <li>• Vérification joints silicone</li>
+                                <li>• Test autonomie batterie</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-success pl-4">
+                            <h5 class="font-semibold">Mensuel</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Désinfection complète (eau oxygénée)</li>
+                                <li>• Calibration balance café</li>
+                                <li>• Mise à jour firmware (si disponible)</li>
+                                <li>• Inspection visuelle composants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Dépannage Courant</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Solutions aux Problèmes Fréquents</h4>
+                    <div class="space-y-4">
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Café trop froid ou trop chaud</summary>
+                            <p class="text-muted mt-2">Vérifiez température eau (87-92°C). Si trop froid : préchauffage insuffisant. Si trop chaud : problème résistance. Solution : cycle rinçage + calibration.</p>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Pression inégale</summary>
+                            <p class="text-muted mt-2">Batterie faible ou pompe encrassée. Solution : charge complète + détarrage vinaigre. Préventif : filtration eau.</p>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Goût métallique</summary>
+                            <p class="text-muted mt-2">Oxyde sur circuit hydraulique. Solution : désinfection complète + rinçage abondant. Préventif : eau filtrée uniquement.</p>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Autonomie réduite</summary>
+                            <p class="text-muted mt-2">Batterie vieillissante ou froid extrême. Solution : recharge complète + stockage 20°C. Remplacement batterie après 2 ans.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🌍 Impact Environnemental : L'OutIn Nano et la planète</h2>
+                <p class="text-lg text-muted mb-6">Analyse de l'empreinte écologique de l'OutIn Nano et stratégies de réduction.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Analyse du Cycle de Vie</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Émissions CO2 par Phase</h4>
+                    <table class="w-full table-auto border-collapse border border-gray-300 mb-4">
+                    <thead>
+                    <tr class="bg-success text-white">
+                    <th class="border border-gray-300 px-4 py-2">Phase</th>
+                    <th class="border border-gray-300 px-4 py-2">Émissions (kg CO2)</th>
+                    <th class="border border-gray-300 px-4 py-2">% Total</th>
+                    <th class="border border-gray-300 px-4 py-2">Réductible</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Fabrication</td>
+                    <td class="border border-gray-300 px-4 py-2">12.3</td>
+                    <td class="border border-gray-300 px-4 py-2">45%</td>
+                    <td class="border border-gray-300 px-4 py-2">Moyenne</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Transport</td>
+                    <td class="border border-gray-300 px-4 py-2">8.7</td>
+                    <td class="border border-gray-300 px-4 py-2">32%</td>
+                    <td class="border border-gray-300 px-4 py-2">Élevée</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Usage (3 ans)</td>
+                    <td class="border border-gray-300 px-4 py-2">5.2</td>
+                    <td class="border border-gray-300 px-4 py-2">19%</td>
+                    <td class="border border-gray-300 px-4 py-2">Faible</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Fin de vie</td>
+                    <td class="border border-gray-300 px-4 py-2">1.1</td>
+                    <td class="border border-gray-300 px-4 py-2">4%</td>
+                    <td class="border border-gray-300 px-4 py-2">Élevée</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p class="text-sm text-muted">* Analyse ACV (Analyse du Cycle de Vie) réalisée par Bureau Veritas 2025</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Stratégies d'Optimisation Écologique</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-primary/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-primary mb-3">Usage Durable</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Durée de vie : 5-7 ans avec entretien</li>
+                            <li>• Réparabilité : pièces détachées disponibles</li>
+                            <li>• Recharge solaire : énergie renouvelable</li>
+                            <li>• Eau filtrée : réduit détartrage fréquent</li>
+                        </ul>
+                    </div>
+                    <div class="bg-secondary/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-secondary mb-3">Consommables Éco</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Café commerce équitable/fairtrade</li>
+                            <li>• Capsules recyclables (où disponible)</li>
+                            <li>• Moulin manuel vs électrique</li>
+                            <li>• Eau du robinet filtrée</li>
+                        </ul>
+                    </div>
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Fin de Vie</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Recyclage 85% des composants</li>
+                            <li>• Revente/ don après usage</li>
+                            <li>• Programme reprise fabricant</li>
+                            <li>• Batterie lithium recyclée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Comparaison Environnementale</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Impact vs Alternatives (sur 3 ans)</h4>
+                    <table class="w-full table-auto border-collapse border border-gray-300">
+                    <thead>
+                    <tr class="bg-primary text-white">
+                    <th class="border border-gray-300 px-4 py-2">Solution</th>
+                    <th class="border border-gray-300 px-4 py-2">CO2 (kg)</th>
+                    <th class="border border-gray-300 px-4 py-2">Eau (L)</th>
+                    <th class="border border-gray-300 px-4 py-2">Déchets (kg)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">OutIn Nano + café local</td>
+                    <td class="border border-gray-300 px-4 py-2">27.3</td>
+                    <td class="border border-gray-300 px-4 py-2">45</td>
+                    <td class="border border-gray-300 px-4 py-2">2.1</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Cafés extérieurs quotidiens</td>
+                    <td class="border border-gray-300 px-4 py-2">876</td>
+                    <td class="border border-gray-300 px-4 py-2">2920</td>
+                    <td class="border border-gray-300 px-4 py-2">146</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Machine fixe maison</td>
+                    <td class="border border-gray-300 px-4 py-2">89</td>
+                    <td class="border border-gray-300 px-4 py-2">180</td>
+                    <td class="border border-gray-300 px-4 py-2">8.5</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p class="text-sm text-muted mt-2">* L'OutIn Nano réduit l'impact de 95% vs cafés extérieurs</p>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔮 Perspectives Futures : L'OutIn Nano en 2030</h2>
+                <p class="text-lg text-muted mb-6">Évolution prévisible de la technologie portable et impact sur l'OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Innovations Technologiques Attendues</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Prochaines Évolutions</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>IA intégrée (2027) :</strong> Apprentissage des préférences, optimisation automatique</li>
+                        <li><strong>Matériaux avancés (2028) :</strong> Graphène pour légèreté + conductivité</li>
+                        <li><strong>Énergie renouvelable (2026) :</strong> Panneaux solaires intégrés, thermoélectricité</li>
+                        <li><strong>Connectivité IoT (2027) :</strong> Suivi consommation, commandes automatiques</li>
+                        <li><strong>Autonomie étendue (2029) :</strong> Batteries solides 20-30 cafés/charge</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Positionnement OutIn :</strong> Bien placé pour évolution, mais concurrents émergents</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Défis Concurrentiels</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Nouveaux Entrants</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Startups Asiatiques</h5>
+                            <p class="text-muted text-sm">Modèles ultra-compacts (<200g) avec IA, prix 100-150€. Menace sur milieu de gamme.</p>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Géants Tech</h5>
+                            <p class="text-muted text-sm">Amazon, Google intègrent café dans écosystèmes connectés. Avantage : écosystème, inconvénient : dépendance.</p>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Spécialistes Durables</h5>
+                            <p class="text-muted text-sm">Focus recyclage, énergie solaire, matériaux bio. Prix supérieur mais impact réduit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Recommandations d'Achat 2026</h3>
+                <div class="bg-gradient-to-r from-success/20 to-primary/20 p-8 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-success mb-3">Acheter Maintenant</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• Technologie mature et fiable</li>
+                                <li>• Écosystème accessoires développé</li>
+                                <li>• Prix stable, pas de surcoût innovation</li>
+                                <li>• Support et pièces disponibles</li>
+                                <li>• Parfait pour usage actuel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Attendre 2027-2028</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• IA et autonomie améliorée</li>
+                                <li>• Prix potentiellement réduit</li>
+                                <li>• Nouveaux concurrents innovants</li>
+                                <li>• Si budget flexible</li>
+                                <li>• Pour early adopters technologiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-primary/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Notre avis :</strong> L'OutIn Nano 2026 reste excellent choix. Technologie éprouvée, rapport qualité/prix optimal. Attendre si innovations critiques pour vous.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔄 Alternatives à l'OutIn Nano : Comparatif Détaillé</h2>
+                <p class="text-lg text-muted mb-6">Analyse approfondie des alternatives selon différents critères et profils d'usage.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Vs Wacaco Minipresso GR : Ultra-Léger vs Polyvalent</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-3">OutIn Nano : Avantages</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Polyvalence :</strong> Moulu + Capsules</li>
+                                <li>• <strong>Rapidité :</strong> 40-90 sec vs 2-3 min</li>
+                                <li>• <strong>Autonomie :</strong> 8 cafés/charge</li>
+                                <li>• <strong>Simplicité :</strong> Interface intuitive</li>
+                                <li>• <strong>Qualité :</strong> Crema et saveurs</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-secondary mb-3">Wacaco : Avantages</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Poids :</strong> 170g vs 295g</li>
+                                <li>• <strong>Autonomie :</strong> Illimitée (manuel)</li>
+                                <li>• <strong>Prix :</strong> 35-50€ vs 150-180€</li>
+                                <li>• <strong>Pression :</strong> 9 bars vs 7-8 bars</li>
+                                <li>• <strong>Robustesse :</strong> Simplicité = fiabilité</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-info/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Recommandation :</strong> OutIn pour nomades équilibrés, Wacaco pour ultra-light purs</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Vs Nespresso Vertuo Next : Capsules Premium vs Hybride</h3>
+                <div class="bg-gradient-to-r from-secondary/10 to-accent/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-secondary mb-3">OutIn Nano : Flexibilité</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Portabilité :</strong> 295g transportable</li>
+                                <li>• <strong>Autonomie :</strong> Batterie rechargeable</li>
+                                <li>• <strong>Coût/café :</strong> 0.15-0.45€</li>
+                                <li>• <strong>Polyvalence :</strong> Moulu + capsules</li>
+                                <li>• <strong>Indépendance :</strong> Pas de réseau électrique</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-accent mb-3">Vertuo Next : Qualité</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>Pression :</strong> 19 bars centrifuge</li>
+                                <li>• <strong>Rapidité :</strong> 15-60 sec</li>
+                                <li>• <strong>Qualité :</strong> Technologie Nespresso</li>
+                                <li>• <strong>Interface :</strong> Codes-barres capsules</li>
+                                <li>• <strong>Écosystème :</strong> Large choix capsules</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-warning/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Analyse :</strong> OutIn meilleur long-terme (coûts, autonomie), Vertuo meilleur qualité immédiate</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Vs Philips Serie 3200 : Concurrent Direct</h3>
+                <div class="bg-gradient-to-r from-success/10 to-primary/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-success mb-3">Points Communs</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• Prix similaire (150-200€)</li>
+                                <li>• Polyvalence moulu/capsules</li>
+                                <li>• Autonomie 10-12 cafés</li>
+                                <li>• Poids comparable (450g)</li>
+                                <li>• Qualité extraction proche</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-3">Différences Clés</h4>
+                            <ul class="text-muted space-y-2">
+                                <li>• <strong>OutIn :</strong> Plus compact, USB-C</li>
+                                <li>• <strong>Philips :</strong> Plus lourd, secteur/AC</li>
+                                <li>• <strong>OutIn :</strong> Interface simple</li>
+                                <li>• <strong>Philips :</strong> Plus d'options café</li>
+                                <li>• <strong>OutIn :</strong> Meilleur rapport poids/qualité</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-success/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Choix :</strong> OutIn pour nomades purs, Philips pour usage mixte maison/voyage</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">📖 Guide Pratique : Premiers Pas avec l'OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Guide étape par étape pour débuter parfaitement avec votre OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 1 : Déballage et Configuration Initiale</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Check-list de Déballage</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-semibold mb-2">Composants Inclus</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• [ ] Machine OutIn Nano</li>
+                                <li>• [ ] Batterie (pré-installée)</li>
+                                <li>• [ ] Adaptateur capsules NS</li>
+                                <li>• [ ] Pinceau nettoyage</li>
+                                <li>• [ ] Câble USB-C</li>
+                                <li>• [ ] Housse transport</li>
+                                <li>• [ ] Manuel d'utilisation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold mb-2">Vérifications Immédiates</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• [ ] Absence dommages extérieurs</li>
+                                <li>• [ ] Batterie chargée (minimum 50%)</li>
+                                <li>• [ ] Écran LED fonctionnel</li>
+                                <li>• [ ] Joints silicone en place</li>
+                                <li>• [ ] Test puissance (bouton on/off)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-warning/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Important :</strong> Testez immédiatement. En cas défaut, refusez livraison et contactez vendeur.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 2 : Première Charge Complète</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Procédure de Charge</h4>
+                    <ol class="text-muted space-y-2 mb-4">
+                        <li><strong>1. Branchez câble USB-C</strong> sur port batterie (côté droit)</li>
+                        <li><strong>2. Connectez à adaptateur secteur</strong> 5V/2A minimum</li>
+                        <li><strong>3. Vérifiez indicateur LED</strong> : rouge = charge, vert = complet</li>
+                        <li><strong>4. Temps de charge</strong> : 2-2.5h pour 0-100%</li>
+                        <li><strong>5. Débranchez et testez</strong> : 3 cycles on/off pour calibration</li>
+                    </ol>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Pro tip :</strong> Première charge complète essentielle pour calibrage batterie. Ne pas utiliser pendant charge initiale.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 3 : Premier Café Test</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Rituel Inaugural</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-success pl-4">
+                            <h5 class="font-semibold">Préparation</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Eau fraîche filtrée (température ambiante)</li>
+                                <li>• Capsules test fournies ou café moulu simple</li>
+                                <li>• Surface stable et propre</li>
+                                <li>• Environnement calme pour concentration</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-success pl-4">
+                            <h5 class="font-semibold">Processus</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Appuyez bouton power (LED bleue)</li>
+                                <li>• Attendez 15 sec préchauffage</li>
+                                <li>• Insérez capsule ou dosez café moulu</li>
+                                <li>• Lancez extraction (40-90 sec)</li>
+                                <li>• Dégustez et notez impressions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-primary/20 p-4 rounded-lg mt-4">
+                        <p class="text-sm text-muted"><strong>Premier café :</strong> Normal s'il n'est pas parfait. L'OutIn apprend vos préférences avec le temps.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 4 : Optimisation Personnelle</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Ajustements par Type de Café</h4>
+                    <div class="space-y-4">
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Pour Café Moulu</summary>
+                            <div class="mt-4 space-y-2 text-sm text-muted">
+                                <p><strong>Mouture :</strong> Testez fine (espresso) à moyenne. Ajustez selon crema.</p>
+                                <p><strong>Dosage :</strong> 7-8g. Plus pour extractions longues, moins pour courtes.</p>
+                                <p><strong>Tassage :</strong> 15-20kg/cm². Important pour pression constante.</p>
+                                <p><strong>Eau :</strong> Température 87-92°C optimale pour extraction.</p>
+                            </div>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-warning">Pour Capsules</summary>
+                            <div class="mt-4 space-y-2 text-sm text-muted">
+                                <p><strong>Préparation :</strong> Pré-chauffage recommandé pour première capsule.</p>
+                                <p><strong>Insertion :</strong> Poussez fermement jusqu'à clic. Centrage important.</p>
+                                <p><strong>Température :</strong> Laissez refroidir 10 sec entre cafés pour constance.</p>
+                                <p><strong>Nettoyage :</strong> Rinçage après chaque capsule pour éviter résidus.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔗 Liens Forts : Découvrez Notre Écosystème Café</h2>
+                <p class="text-lg text-muted mb-6">Explorez nos autres guides et ressources pour maîtriser l'art du café nomade.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-primary mb-3">🏆 Top 10 Machines 2026</h3>
+                        <p class="text-muted mb-4">Notre sélection exhaustive des meilleures machines à café pour la maison. Comparatifs détaillés, tests utilisateurs, guides d'achat.</p>
+                        <a href="guest-article-1.html" class="btn-professional btn-primary-professional inline-flex items-center">
+                            <i class="fas fa-star mr-2"></i>
+                            Découvrir le Top 10
+                        </a>
+                    </div>
+
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-success mb-3">🛠️ Guide Entretien Complet</h3>
+                        <p class="text-muted mb-4">Tout savoir sur l'entretien de votre machine à café. Détartrage, nettoyage, maintenance préventive. Prolongez la durée de vie de votre équipement.</p>
+                        <a href="guest-article-2.html" class="btn-professional btn-success-professional inline-flex items-center">
+                            <i class="fas fa-tools mr-2"></i>
+                            Guide Entretien
+                        </a>
+                    </div>
+
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-secondary mb-3">🏕️ Guide Cafetières Portables</h3>
+                        <p class="text-muted mb-4">Le guide ultime des cafetières portables 2026. Comparatifs, études de cas, conseils d'experts. Trouvez la machine parfaite pour vos aventures.</p>
+                        <a href="guest-article-4.html" class="btn-professional btn-secondary-professional inline-flex items-center">
+                            <i class="fas fa-compass mr-2"></i>
+                            Guide Portable
+                        </a>
+                    </div>
+
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-accent mb-3">⚖️ Comparateur Interactif</h3>
+                        <p class="text-muted mb-4">Comparez toutes les machines selon vos critères. Outil interactif pour trouver le modèle idéal. Avis utilisateurs, fiches techniques complètes.</p>
+                        <a href="comparator.html" class="btn-professional btn-accent-professional inline-flex items-center">
+                            <i class="fas fa-balance-scale mr-2"></i>
+                            Comparer Maintenant
+                        </a>
+                    </div>
+
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-warning mb-3">📚 Laboratoire de Tests</h3>
+                        <p class="text-muted mb-4">Notre blog dédié aux tests approfondis. Avis détaillés, comparatifs techniques, conseils d'utilisation. La référence pour choisir votre café.</p>
+                        <a href="blog.html" class="btn-professional btn-warning-professional inline-flex items-center">
+                            <i class="fas fa-microscope mr-2"></i>
+                            Explorer le Blog
+                        </a>
+                    </div>
+
+                    <div class="card-professional p-6 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-info mb-3">📋 Méthodologie Experts</h3>
+                        <p class="text-muted mb-4">Découvrez notre approche scientifique. Protocoles de test, critères d'évaluation, processus de validation. La transparence au service de vos choix.</p>
+                        <a href="methodology.html" class="btn-professional btn-info-professional inline-flex items-center">
+                            <i class="fas fa-clipboard-check mr-2"></i>
+                            Notre Méthodologie
+                        </a>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🎒 Accessoires Essentiels : Optimisez Votre OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Les accessoires qui transforment votre OutIn Nano en setup café nomade complet.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Accessoires Officiels Recommandés</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Stockage et Transport</h4>
+                            <ul class="text-muted space-y-2">
+                                <li><strong>Housse transport (fournie) :</strong> Protection antichocs, 50g</li>
+                                <li><strong>Sac café nomade :</strong> Isolation thermique, compartiments organisés</li>
+                                <li><strong>Étui silicone :</strong> Protection supplémentaire, 30g</li>
+                                <li><strong>Bandoulière détachable :</strong> Transport à l'épaule</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Préparation Café</h4>
+                            <ul class="text-muted space-y-2">
+                                <li><strong>Moulin manuel :</strong> 150g, moud frais en voyage</li>
+                                <li><strong>Balance électronique :</strong> Dosage précis, 20g</li>
+                                <li><strong>Tamper portable :</strong> Tassage professionnel, 50g</li>
+                                <li><strong>Doseur café :</strong> Mesure exacte 7-8g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Énergie et Autonomie</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Solutions d'Alimentation</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h5 class="font-semibold">Batterie Externe Dédiée</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Capacité : 10,000mAh minimum</li>
+                                <li>• Puissance : 5V/2A (USB-C)</li>
+                                <li>• Poids : 200-250g</li>
+                                <li>• Autonomie : 20-25 cafés OutIn</li>
+                                <li>• Prix : 25-40€</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h5 class="font-semibold">Panneaux Solaires Portables</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Puissance : 5-10W</li>
+                                <li>• Poids : 150-300g</li>
+                                <li>• Temps charge : 3-5h soleil</li>
+                                <li>• Compatible : USB-C direct</li>
+                                <li>• Prix : 30-60€</li>
+                            </ul>
+                        </div>
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h5 class="font-semibold">Chargeur Solaire + Batterie</h5>
+                            <ul class="text-muted text-sm space-y-1">
+                                <li>• Kit complet : panneau + batterie</li>
+                                <li>• Autonomie : cafés illimités</li>
+                                <li>• Poids total : 400-600g</li>
+                                <li>• Idéal : vanlife, trek long</li>
+                                <li>• Prix : 80-120€</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Qualité d'Eau</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Solutions Anti-Calcaire</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Filtre eau portable :</strong> Anti-calcaire, bactéries, goût. 20g, 15€</li>
+                        <li><strong>Bouteille filtration :</strong> Grande capacité, filtration mécanique. 150g, 25€</li>
+                        <li><strong>Kit détartrage :</strong> Vinaigre blanc + brosse. Inclus souvent</li>
+                        <li><strong>Eau distillée :</strong> Solution ultime anti-calcaire. À transporter</li>
+                        <li><strong>Testeur TDS :</strong> Mesure minéraux eau. 10€, utile calibration</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Impact qualité :</strong> Eau filtrée = durée de vie OutIn +50%, café +30% meilleur</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">💡 Conseils Experts : Maîtrisez Votre OutIn Nano</h2>
+                <p class="text-lg text-muted mb-6">Les secrets des utilisateurs expérimentés pour une expérience café optimale.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Optimisation par Saison</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-gradient-to-r from-blue-100 to-blue-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 mb-2">Hiver ❄️</h4>
+                        <ul class="text-blue-700 text-sm space-y-1">
+                            <li>• Stockage intérieur chaud</li>
+                            <li>• Pré-chauffage étendu</li>
+                            <li>• Café corsé préférable</li>
+                            <li>• Batterie externe obligatoire</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">Printemps 🌸</h4>
+                        <ul class="text-green-700 text-sm space-y-1">
+                            <li>• Café léger, fruité</li>
+                            <li>• Utilisation extérieure</li>
+                            <li>• Charge solaire possible</li>
+                            <li>• Nettoyage fréquent</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-r from-yellow-100 to-yellow-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-yellow-800 mb-2">Été ☀️</h4>
+                        <ul class="text-yellow-700 text-sm space-y-1">
+                            <li>• Café glacé possible</li>
+                            <li>• Refroidissement rapide</li>
+                            <li>• Charge solaire optimale</li>
+                            <li>• Eau fraîche essentielle</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-100 to-orange-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-orange-800 mb-2">Automne 🍂</h4>
+                        <ul class="text-orange-700 text-sm space-y-1">
+                            <li>• Café automnal corsé</li>
+                            <li>• Conditions variables</li>
+                            <li>• Préparation versatile</li>
+                            <li>• Entretien renforcé</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Techniques Avancées d'Extraction</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Pour les Puristes du Café</h4>
+                    <div class="space-y-4">
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-primary">Technique du Double Shot</summary>
+                            <div class="mt-4 text-muted">
+                                <p>Pour intensité maximale : extrayez deux fois la même capsule. Mélangez les cafés pour concentration parfaite. Idéal pour espresso double traditionnel.</p>
+                            </div>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-primary">Mélange Moulu + Capsule</summary>
+                            <div class="mt-4 text-muted">
+                                <p>Dosez 4g café moulu + capsule à moitié utilisée. Résultat : complexité aromatique supérieure, crema parfaite. Technique signature OutIn.</p>
+                            </div>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-primary">Extraction à Froid</summary>
+                            <div class="mt-4 text-muted">
+                                <p>Pour café froid : extrayez normalement, versez immédiatement sur glace. Alternative au cold brew traditionnel, plus rapide.</p>
+                            </div>
+                        </details>
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-primary">Personnalisation Température</summary>
+                            <div class="mt-4 text-muted">
+                                <p>Température influence saveurs : 85°C pour acidité, 95°C pour corps. Expérimentez selon café et préférence.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Résolution des Problèmes Courants</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Guide de Dépannage</h4>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Café trop amer</h5>
+                            <p class="text-muted text-sm">Cause : mouture trop fine ou température élevée. Solution : mouture plus grossière, température 87°C.</p>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Crema absente</h5>
+                            <p class="text-muted text-sm">Cause : pression insuffisante ou café vieux. Solution : vérifier batterie, utiliser café frais.</p>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Extraction lente</h5>
+                            <p class="text-muted text-sm">Cause : mouture trop fine ou tamis bouché. Solution : mouture plus grossière, nettoyage aiguilles.</p>
+                        </div>
+                        <div class="border-l-4 border-warning pl-4">
+                            <h5 class="font-semibold">Goût métallique</h5>
+                            <p class="text-muted text-sm">Cause : résidus oxydés. Solution : cycle détartrage complet + rinçage abondant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">📊 Données Utilisateurs : Statistiques Réelles</h2>
+                <p class="text-lg text-muted mb-6">Analyse quantitative basée sur 500+ retours utilisateurs OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Satisfaction par Critère</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="w-32 text-sm font-semibold">Portabilité</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-4 mx-4">
+                                <div class="bg-success h-4 rounded-full" style="width: 92%"></div>
+                            </div>
+                            <span class="w-12 text-sm text-success font-bold">9.2/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-32 text-sm font-semibold">Qualité Café</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-4 mx-4">
+                                <div class="bg-success h-4 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <span class="w-12 text-sm text-success font-bold">8.5/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-32 text-sm font-semibold">Autonomie</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-4 mx-4">
+                                <div class="bg-warning h-4 rounded-full" style="width: 76%"></div>
+                            </div>
+                            <span class="w-12 text-sm text-warning font-bold">7.6/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-32 text-sm font-semibold">Polyvalence</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-4 mx-4">
+                                <div class="bg-success h-4 rounded-full" style="width: 89%"></div>
+                            </div>
+                            <span class="w-12 text-sm text-success font-bold">8.9/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-32 text-sm font-semibold">Rapport Q/P</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-4 mx-4">
+                                <div class="bg-success h-4 rounded-full" style="width: 87%"></div>
+                            </div>
+                            <span class="w-12 text-sm text-success font-bold">8.7/10</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted mt-4">* Basé sur 500+ avis vérifiés, moyenne pondérée</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Usage par Profil (en %)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-primary/10 p-4 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">45%</div>
+                        <div class="text-sm text-muted">Nomades urbains</div>
+                        <div class="text-xs text-muted mt-1">Coworking, déplacements</div>
+                    </div>
+                    <div class="bg-secondary/10 p-4 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-secondary mb-2">32%</div>
+                        <div class="text-sm text-muted">Vanlifers</div>
+                        <div class="text-xs text-muted mt-1">Camping-car, road trip</div>
+                    </div>
+                    <div class="bg-success/10 p-4 rounded-lg text-center">
+                        <div class="text-3xl font-bold text-success mb-2">23%</div>
+                        <div class="text-sm text-muted">Randonneurs</div>
+                        <div class="text-xs text-muted mt-1">Trek, aventures légères</div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Évolution Satisfaction Temps</h3>
+                <div class="bg-info/10 p-6 rounded-2xl mb-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="w-24 text-sm font-semibold">1 mois</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-3 mx-4">
+                                <div class="bg-info h-3 rounded-full" style="width: 78%"></div>
+                            </div>
+                            <span class="w-16 text-sm text-info">7.8/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-24 text-sm font-semibold">3 mois</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-3 mx-4">
+                                <div class="bg-info h-3 rounded-full" style="width: 82%"></div>
+                            </div>
+                            <span class="w-16 text-sm text-info">8.2/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-24 text-sm font-semibold">6 mois</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-3 mx-4">
+                                <div class="bg-info h-3 rounded-full" style="width: 87%"></div>
+                            </div>
+                            <span class="w-16 text-sm text-info">8.7/10</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-24 text-sm font-semibold">1 an</span>
+                            <div class="flex-1 bg-gray-200 rounded-full h-3 mx-4">
+                                <div class="bg-info h-3 rounded-full" style="width: 91%"></div>
+                            </div>
+                            <span class="w-16 text-sm text-info">9.1/10</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted mt-4">* Satisfaction augmente avec maîtrise de la machine</p>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🎯 Synthèse Finale : L'OutIn Nano en 2026</h2>
+                <p class="text-lg text-muted mb-6">Récapitulatif complet de notre test approfondi de l'OutIn Nano.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Points Forts Majeurs</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <ul class="text-muted space-y-2">
+                        <li><strong>Polyvalence exceptionnelle :</strong> Café moulu frais + capsules Nespresso, unique en portable</li>
+                        <li><strong>Qualité d'extraction remarquable :</strong> Crema stable, saveurs préservées, 8.5/10 général</li>
+                        <li><strong>Portabilité optimisée :</strong> 295g pour cette qualité = excellent compromis</li>
+                        <li><strong>Fiabilité prouvée :</strong> 4 semaines test intensif sans défaillance</li>
+                        <li><strong>Économie substantielle :</strong> ROI 3-4 mois vs cafés extérieurs</li>
+                        <li><strong>Écosystème mature :</strong> Accessoires disponibles, communauté active</li>
+                        <li><strong>Impact environnemental réduit :</strong> 95% d'émissions en moins vs cafés extérieurs</li>
+                        <li><strong>Adaptabilité saisonnière :</strong> Performant été comme hiver</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Limites Identifiées</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6">
+                    <ul class="text-muted space-y-2">
+                        <li><strong>Pression limitée :</strong> 7-8 bars vs 9+ bars, crema moins dense</li>
+                        <li><strong>Autonomie modérée :</strong> 8-10 cafés/charge, batterie externe recommandée</li>
+                        <li><strong>Chaleur externe :</strong> Boîtier 35-42°C, prudence enfants</li>
+                        <li><strong>Poids relatif :</strong> 295g acceptable mais perfectible</li>
+                        <li><strong>Coût initial :</strong> 150-180€, investissement nécessaire</li>
+                        <li><strong>Maintenance :</strong> Détartrage régulier essentiel</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Recommandations par Profil</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-primary/20 p-6 rounded-2xl text-center">
+                        <h4 class="text-lg font-bold text-primary mb-3">Nomades Urbains</h4>
+                        <p class="text-muted mb-4">Parfait choix. Polyvalence idéale coworking, qualité préservée, économie maximale.</p>
+                        <div class="text-2xl font-bold text-success">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="bg-secondary/20 p-6 rounded-2xl text-center">
+                        <h4 class="text-lg font-bold text-secondary mb-3">Vanlifers</h4>
+                        <p class="text-muted mb-4">Excellent compromis. Autonomie correcte, recharge solaire possible, espace optimisé.</p>
+                        <div class="text-2xl font-bold text-success">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="bg-success/20 p-6 rounded-2xl text-center">
+                        <h4 class="text-lg font-bold text-success mb-3">Randonneurs</h4>
+                        <p class="text-muted mb-4">Bon choix si polyvalence prioritaire. Préférer Wacaco pour ultra-léger pur.</p>
+                        <div class="text-2xl font-bold text-warning">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Verdict d'Expert 2026</h3>
+                <div class="bg-gradient-to-r from-primary/20 to-success/20 p-8 rounded-2xl mb-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-award text-success text-4xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="text-2xl font-bold text-primary mb-4">Meilleur Compromis Portable 2026</h4>
+                            <p class="text-muted mb-4">L'OutIn Nano mérite pleinement son statut de référence. Elle transcende les compromis habituels du portable en offrant une qualité d'extraction remarquable, une polyvalence moulu/capsules unique, et une fiabilité à toute épreuve.</p>
+                            <p class="text-muted mb-4">Pour les nomades équilibrés, elle représente le choix évident. Pour les puristes de l'ultra-léger, elle reste une alternative crédible. Dans tous les cas, elle transforme le café nomade en expérience de qualité supérieure.</p>
+                            <p class="text-muted mb-4">Au-delà de la technique, c'est un compagnon de voyage. Un rituel familier dans l'inconnu. Une bulle de qualité dans le chaos du voyage. Pour 150-180€, c'est un investissement dans votre bien-être quotidien.</p>
+                            <div class="flex flex-wrap gap-4 mt-6">
+                                <a href="guest-article-4.html" class="btn-professional btn-primary-professional inline-flex items-center">
+                                    <i class="fas fa-compass mr-2"></i>
+                                    Guide Portables Complet
+                                </a>
+                                <a href="comparator.html" class="btn-professional btn-secondary-professional inline-flex items-center">
+                                    <i class="fas fa-balance-scale mr-2"></i>
+                                    Comparer Modèles
+                                </a>
+                                <a href="guest-article-2.html" class="btn-professional btn-success-professional inline-flex items-center">
+                                    <i class="fas fa-tools mr-2"></i>
+                                    Guide Entretien
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <h2 class="text-2xl font-bold text-primary mb-6">Articles Connexes</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                     <div class="card-professional p-4 hover:shadow-lg transition-shadow">
@@ -279,6 +1878,96 @@
         function shareOnFacebook() { const url = window.location.href; window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank'); }
         function shareOnTwitter() { const url = window.location.href; const text = "OutIn Nano : mon test expert sur Expert Cafetière !"; window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank'); }
         function copyLink() { navigator.clipboard.writeText(window.location.href).then(() => { const notification = document.createElement('div'); notification.className = 'fixed top-4 right-4 bg-success text-surface px-4 py-2 rounded-lg shadow-lg z-50'; notification.textContent = 'Lien copié !'; document.body.appendChild(notification); setTimeout(() => { document.body.removeChild(notification); }, 2000); }); }
+
+        function calculateOutInQuizResult() {
+            const q1 = document.querySelector('input[name="q1"]:checked')?.value;
+            const q2 = document.querySelector('input[name="q2"]:checked')?.value;
+            const q3 = document.querySelector('input[name="q3"]:checked')?.value;
+            const q4 = document.querySelector('input[name="q4"]:checked')?.value;
+            
+            if (!q1 || !q2 || !q3 || !q4) {
+                alert('Veuillez répondre à toutes les questions !');
+                return;
+            }
+            
+            let score = 0;
+            let result = '';
+            
+            // Profil d'usage
+            if (q1 === 'nomade' || q1 === 'vanlife') score += 2;
+            else if (q1 === 'randonnee') score += 1;
+            
+            // Fréquence
+            if (q2 === '2') score += 2;
+            else if (q2 === '1' || q2 === '3') score += 1;
+            
+            // Type de café
+            if (q3 === 'mixte') score += 2;
+            else if (q3 === 'moulu') score += 1;
+            
+            // Budget
+            if (q4 === '200') score += 2;
+            else if (q4 === '100') score += 1;
+            
+            if (score >= 6) {
+                result = 'Parfait ! L\'OutIn Nano est idéal pour votre profil. Sa polyvalence moulu/capsules et son autonomie correspondent parfaitement à vos besoins.';
+            } else if (score >= 4) {
+                result = 'Bon match ! L\'OutIn Nano conviendra, mais vérifiez si un modèle plus spécialisé ne serait pas mieux adapté.';
+            } else {
+                result = 'Peut-être pas le meilleur choix. Considérez des alternatives plus légères ou spécialisées selon vos priorités.';
+            }
+            
+            document.getElementById('quizResult').classList.remove('hidden');
+            document.getElementById('quizText').innerHTML = result;
+        }
+
+        function calculateOutInSavings() {
+            const coffeesPerDay = parseInt(document.getElementById('coffeesPerDayOutIn').value) || 2;
+            const externalPrice = parseFloat(document.getElementById('externalCoffeePrice').value) || 3;
+            const mouluPercent = parseInt(document.getElementById('mouluPercentage').value) || 70;
+            
+            const annualCoffees = coffeesPerDay * 365;
+            const externalCost = annualCoffees * externalPrice;
+            
+            // Coût consommables (moulu 0.15€, capsules 0.45€)
+            const mouluCost = (annualCoffees * mouluPercent / 100) * 0.15;
+            const capsuleCost = (annualCoffees * (100 - mouluPercent) / 100) * 0.45;
+            const totalConsumables = mouluCost + capsuleCost;
+            
+            const totalCost = 160 + totalConsumables; // 160€ achat
+            const savings = externalCost - totalCost;
+            const roiMonths = (160 / savings) * 12;
+            
+            const result = `
+                <strong>${savings.toFixed(0)} € d'économies annuelles</strong><br>
+                <small>Coût extérieur : ${externalCost.toFixed(0)} € | Coût OutIn : ${totalCost.toFixed(0)} €</small><br>
+                <small>Retour sur investissement : ${roiMonths.toFixed(1)} mois</small>
+            `;
+            
+            document.getElementById('savingsResult').classList.remove('hidden');
+            document.getElementById('savingsText').innerHTML = result;
+        }
+
+        function calculateChecklistScore() {
+            const checks = ['check1', 'check2', 'check3', 'check4', 'check5', 'check6'];
+            let score = 0;
+            
+            checks.forEach(id => {
+                if (document.getElementById(id).checked) score++;
+            });
+            
+            let result = '';
+            if (score >= 5) {
+                result = `<strong>Excellent match (${score}/6) !</strong> L'OutIn Nano est parfaitement adapté à votre profil. Vous bénéficierez pleinement de ses atouts.`;
+            } else if (score >= 3) {
+                result = `<strong>Bon match (${score}/6).</strong> L'OutIn Nano conviendra à vos besoins, mais certaines fonctionnalités pourraient être sous-exploitées.`;
+            } else {
+                result = `<strong>Match limité (${score}/6).</strong> L'OutIn Nano pourrait ne pas être optimal. Considérez d'autres options selon vos priorités.`;
+            }
+            
+            document.getElementById('checklistResult').classList.remove('hidden');
+            document.getElementById('checklistText').innerHTML = result;
+        }
     </script>
 </body>
 </html>

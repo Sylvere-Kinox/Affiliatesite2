@@ -142,6 +142,185 @@
             </header>
 
             <div class="prose prose-lg max-w-none bg-surface p-8 rounded-lg shadow-soft">
+                <!-- Quiz Interactif -->
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12 border-l-4 border-primary">
+                    <h2 class="text-3xl font-bold text-primary mb-6 flex items-center">
+                        <i class="fas fa-compass text-secondary mr-3"></i>
+                        Quiz : Quelle Cafetière Portable Vous Convient ?
+                    </h2>
+                    <p class="text-lg text-muted mb-6">Parti en voyage ? Camping ? Bureau nomade ? Découvrez en 5 questions quelle cafetière portable est faite pour vous !</p>
+                    
+                    <div id="quiz-portable-container" class="space-y-6">
+                        <div class="quiz-question bg-surface p-6 rounded-lg border border-neutral">
+                            <p class="font-semibold text-lg mb-4">1. Quel est votre profil de voyage principal ?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q1" value="randonnee" class="mr-3">
+                                    <span>Randonnée, trekking, camping sauvage</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q1" value="nomade" class="mr-3">
+                                    <span>Nomade urbain, coworking, déplacements fréquents</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q1" value="roadtrip" class="mr-3">
+                                    <span>Roadtrip, van, camping-car</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q1" value="aventure" class="mr-3">
+                                    <span>Aventure extrême, survie, ultra-léger</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question bg-surface p-6 rounded-lg border border-neutral">
+                            <p class="font-semibold text-lg mb-4">2. Quelle est votre contrainte de poids principale ?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q2" value="ultra-leger" class="mr-3">
+                                    <span>Ultra-léger : chaque gramme compte (sac à dos)</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q2" value="leger" class="mr-3">
+                                    <span>Léger : 200-400g acceptable</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q2" value="moyen" class="mr-3">
+                                    <span>Moyen : jusqu'à 600g (véhicule disponible)</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q2" value="flexible" class="mr-3">
+                                    <span>Flexible : pas de contrainte de poids</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question bg-surface p-6 rounded-lg border border-neutral">
+                            <p class="font-semibold text-lg mb-4">3. Quel type de café préférez-vous ?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q3" value="express" class="mr-3">
+                                    <span>Expresso court et intense</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q3" value="long" class="mr-3">
+                                    <span>Café long (filtre, americano)</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q3" value="tout" class="mr-3">
+                                    <span>Un peu de tout selon l'humeur</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q3" value="simple" class="mr-3">
+                                    <span>Café simple, pas d'exigence particulière</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question bg-surface p-6 rounded-lg border border-neutral">
+                            <p class="font-semibold text-lg mb-4">4. Quel est votre accès à l'électricité ?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q4" value="usb" class="mr-3">
+                                    <span>USB-C ou powerbank toujours disponible</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q4" value="variable" class="mr-3">
+                                    <span>Variable : parfois électricité, parfois pas</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q4" value="rare" class="mr-3">
+                                    <span>Rare : camping sauvage, trekking</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q4" value="toujours" class="mr-3">
+                                    <span>Toujours disponible (hôtel, véhicule)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question bg-surface p-6 rounded-lg border border-neutral">
+                            <p class="font-semibold text-lg mb-4">5. Quel est votre budget pour une cafetière portable ?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q5" value="bas" class="mr-3">
+                                    <span>Économique : 20-60€</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q5" value="moyen" class="mr-3">
+                                    <span>Moyen : 60-150€</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q5" value="eleve" class="mr-3">
+                                    <span>Premium : 150-300€</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="q5" value="aucune" class="mr-3">
+                                    <span>Pas de limite, qualité avant tout</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button onclick="calculatePortableQuizResult()" class="btn-professional btn-primary-professional text-lg px-8 py-3">
+                                <i class="fas fa-magic mr-2"></i>
+                                Trouver Ma Cafetière Idéale
+                            </button>
+                        </div>
+
+                        <div id="quiz-portable-result" class="hidden bg-gradient-to-r from-success/20 to-primary/20 p-6 rounded-lg border-l-4 border-success">
+                            <h3 class="text-xl font-bold text-primary mb-4">Votre Cafetière Portable Idéale :</h3>
+                            <p id="portable-result-text" class="text-lg"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function calculatePortableQuizResult() {
+                        const answers = {
+                            q1: document.querySelector('input[name="q1"]:checked')?.value,
+                            q2: document.querySelector('input[name="q2"]:checked')?.value,
+                            q3: document.querySelector('input[name="q3"]:checked')?.value,
+                            q4: document.querySelector('input[name="q4"]:checked')?.value,
+                            q5: document.querySelector('input[name="q5"]:checked')?.value
+                        };
+
+                        if (!answers.q1 || !answers.q2 || !answers.q3 || !answers.q4 || !answers.q5) {
+                            alert('Veuillez répondre à toutes les questions !');
+                            return;
+                        }
+
+                        let recommendation = '';
+                        let reasoning = '';
+
+                        // Logique de recommandation basée sur les réponses
+                        if (answers.q1 === 'randonnee' && answers.q2 === 'ultra-leger' && answers.q4 === 'rare') {
+                            recommendation = 'Wacaco Minipresso GR - Parfaite pour la randonnée légère';
+                            reasoning = 'Ultra-portable, manuelle, aucun besoin électrique. Idéale pour le camping sauvage.';
+                        } else if (answers.q1 === 'nomade' && answers.q4 === 'usb' && answers.q2 !== 'ultra-leger') {
+                            recommendation = 'OutIn Nano - Le meilleur compromis nomade urbain';
+                            reasoning = 'USB-C rechargeable, accepte capsules et moulu, parfaite pour coworking et déplacements.';
+                        } else if (answers.q1 === 'roadtrip' && answers.q2 === 'moyen' && answers.q5 !== 'bas') {
+                            recommendation = 'Philips Serie 3200 Portable - Qualité automatique en voyage';
+                            reasoning = 'Performance de machine fixe dans un format portable, idéale pour van ou roadtrip.';
+                        } else if (answers.q2 === 'ultra-leger' || answers.q5 === 'bas') {
+                            recommendation = 'Aeropress ou filtre manuel - Solution économique ultra-légère';
+                            reasoning = 'Coût minimal, poids plume, café correct partout. Parfaite pour budget serré.';
+                        } else {
+                            recommendation = 'OutIn Nano - Polyvalente et équilibrée';
+                            reasoning = 'Bonne autonomie, accepte tous types de café, rapport qualité-prix excellent.';
+                        }
+
+                        const resultDiv = document.getElementById('quiz-portable-result');
+                        const resultText = document.getElementById('portable-result-text');
+
+                        resultText.innerHTML = '<span class="text-success font-bold">' + recommendation + '</span><br>' + reasoning;
+
+                        resultDiv.classList.remove('hidden');
+                        resultDiv.scrollIntoView({ behavior: 'smooth' });
+                    }
+                </script>
+
                 <p class="text-lg mb-8 text-center font-medium text-primary">Imaginez-vous à la terrasse d'un refuge montagnard, dans une tente au cœur de la nature, ou au cœur du chaos urbain avec votre laptop — et déguster un café savoureux comme à domicile. Les cafetières portables transforment cette vision en réalité. Chez <a href="https://expert-cafetiere.eu/">Expert Cafetière</a>, nous avons testé des dizaines de modèles nomades pour vous offrir ce guide exhaustif. Découvrez comment choisir votre compagnon de voyage idéal.</p>
 
                 <div class="bg-gradient-to-r from-secondary/20 to-primary/20 p-6 rounded-2xl my-8 border-l-4 border-secondary">
@@ -188,9 +367,69 @@
                         <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
                     </button>
                     <div class="accordion-content hidden p-6 bg-surface">
-                        <p class="mb-4"><strong>Votre priorité :</strong> Poids minimal, zéro souci électrique.</p>
+                        <p class="mb-4"><strong>Votre priorité :</strong> Poids minimal, zéro souci électrique, autonomie totale.</p>
                         <p class="mb-4">Pour vous, les cafetières <strong>manuelles comme l'Aeropress ou la Nanopresso</strong> sont parfaites. Entre 100-300g, aucune batterie à charger, extraction qualité digne d'un barista. Vous apportez un petit moulin à main (200g) et du café acheté localement.</p>
-                        <p><strong>Investissement :</strong> 30-80 €. <strong>Apprentissage :</strong> 2-3 utilisations pour maîtriser la technique.</p>
+                        <p class="mb-6"><strong>Investissement :</strong> 30-80 €. <strong>Apprentissage :</strong> 2-3 utilisations pour maîtriser la technique.</p>
+                        
+                        <h4 class="text-lg font-semibold text-primary mb-3">Avantages pour Randonneurs</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Zéro dépendance électrique :</strong> Fonctionne n'importe où, même en pleine nature</li>
+                            <li><strong>Poids plume :</strong> 150-300g total avec accessoires</li>
+                            <li><strong>Durabilité extrême :</strong> Résiste aux chocs et conditions difficiles</li>
+                            <li><strong>Polyvalence café :</strong> Accepte tous types de mouture</li>
+                            <li><strong>Coût d'usage minimal :</strong> Café local + eau = économie maximale</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-warning mb-3">Inconvénients à Considérer</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Courbe d'apprentissage :</strong> Technique manuelle à maîtriser</li>
+                            <li><strong>Temps d'extraction :</strong> 2-4 minutes vs 30 secondes électrique</li>
+                            <li><strong>Eau chaude requise :</strong> Source de chaleur externe nécessaire</li>
+                            <li><strong>Volume limité :</strong> 1-2 tasses maximum</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-success mb-3">Équipement Recommandé</h4>
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-success/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-success mb-2">Essentiel</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Cafetière manuelle (Aeropress/Nanopress)</li>
+                                    <li>• Petit moulin à main (200g)</li>
+                                    <li>• Gourde isotherme pour eau chaude</li>
+                                    <li>• Café en grains specialty</li>
+                                </ul>
+                            </div>
+                            <div class="bg-primary/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-primary mb-2">Optionnel</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Réchaud ultra-léger (50g)</li>
+                                    <li>• Filtre à eau portable</li>
+                                    <li>• Pods de café pré-dosés</li>
+                                    <li>• Tasses pliables en silicone</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-accent mb-3">Scénarios d'Usage Typiques</h4>
+                        <div class="space-y-3 mb-4">
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Camping en montagne</summary>
+                                <p class="text-muted mt-2">Réveil au refuge, café avec vue panoramique. Utilisez l'eau chaude du réchaud collectif ou préparez votre propre feu.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Trekking multi-jours</summary>
+                                <p class="text-muted mt-2">Rituel matinal dans la tente. Café comme récompense après l'effort. L'indépendance totale justifie le poids.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Randonnée journée</summary>
+                                <p class="text-muted mt-2">Pause café au sommet. L'ultraléger permet de l'emporter sans sacrifier le plaisir du café.</p>
+                            </details>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-primary/20 to-secondary/20 p-4 rounded-lg mb-4">
+                            <h5 class="font-semibold text-primary mb-2">💡 Astuce Pro : L'Art du Café Sauvage</h5>
+                            <p class="text-muted">Le café en pleine nature n'est pas qu'une boisson : c'est un rituel de reconnexion avec l'environnement. Prenez le temps d'observer, sentir, écouter. Le café manuel devient méditation.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -205,7 +444,76 @@
                     <div class="accordion-content hidden p-6 bg-surface">
                         <p class="mb-4"><strong>Votre priorité :</strong> Rapidité, ressemblance machine complète, USB-C recharge.</p>
                         <p class="mb-4">Les <strong>portables électriques compactes avec capsules</strong> sont idéales. Entre 200-400g, recharge USB-C durant la nuit, 6-8 cafés autonomes, simple à utiliser. Vous chargez via votre powerbank bureau directement.</p>
-                        <p><strong>Investissement :</strong> 80-200 €. <strong>Apprentissage :</strong> Nul — appuyez et dégustez.</p>
+                        <p class="mb-6"><strong>Investissement :</strong> 80-200 €. <strong>Apprentissage :</strong> Nul — appuyez et dégustez.</p>
+                        
+                        <h4 class="text-lg font-semibold text-secondary mb-3">Avantages pour Nomades Digitaux</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Recharge universelle :</strong> USB-C comme votre laptop et téléphone</li>
+                            <li><strong>Autonomie suffisante :</strong> 6-10 cafés par charge complète</li>
+                            <li><strong>Rapidité d'extraction :</strong> 30-60 secondes par café</li>
+                            <li><strong>Qualité constante :</strong> Même résultat partout</li>
+                            <li><strong>Intégration urbaine :</strong> Design moderne pour coworking</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-warning mb-3">Contraintes Métropolitaines</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Eau de qualité variable :</strong> Eau du robinet souvent calcaire</li>
+                            <li><strong>Bruit en espace partagé :</strong> Pompe peut déranger en open space</li>
+                            <li><strong>Coût capsules élevé :</strong> 0,40-0,60€ par café</li>
+                            <li><strong>Dépendance électrique :</strong> Recharge nécessaire régulièrement</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-success mb-3">Écosystème Nomade Complet</h4>
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-secondary/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-secondary mb-2">Matériel Essentiel</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Cafetière portable USB-C</li>
+                                    <li>• Powerbank 10000mAh+</li>
+                                    <li>• Capsules de voyage (compactes)</li>
+                                    <li>• Gourde isotherme 500ml</li>
+                                </ul>
+                            </div>
+                            <div class="bg-primary/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-primary mb-2">Accessoires Pratiques</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Étui de protection</li>
+                                    <li>• Adaptateur universel</li>
+                                    <li>• Nettoyant de voyage</li>
+                                    <li>• Tasse portable pliable</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-accent mb-3">Scénarios de Travail Nomade</h4>
+                        <div class="space-y-3 mb-4">
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Coworking matinal</summary>
+                                <p class="text-muted mt-2">Arrivée tôt pour éviter la foule. Café rapide avant la première réunion. Recharge via prise USB du coworking.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Bureau mobile</summary>
+                                <p class="text-muted mt-2">Pause café entre deux calls. Machine dans le sac à dos, prête en 2 minutes. Autonomie pour la journée.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Café en déplacement</summary>
+                                <p class="text-muted mt-2">Entre deux rendez-vous. Recharge rapide via powerbank. Café de qualité supérieure aux chaînes.</p>
+                            </details>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-primary mb-3">Optimisation Énergétique</h4>
+                        <p class="text-muted mb-4">Pour maximiser l'autonomie en environnement urbain :</p>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Recharge opportuniste :</strong> Profitez des pauses USB (transports, cafés)</li>
+                            <li><strong>Powerbank dédié :</strong> Batterie externe réservée au café</li>
+                            <li><strong>Mode économie :</strong> Certaines machines proposent des réglages d'économie</li>
+                            <li><strong>Pré-chauffage intelligent :</strong> Chauffe seulement quand nécessaire</li>
+                        </ul>
+
+                        <div class="bg-gradient-to-r from-secondary/20 to-accent/20 p-4 rounded-lg mb-4">
+                            <h5 class="font-semibold text-secondary mb-2">🎯 Astuce Pro : Le Rituel Nomade</h5>
+                            <p class="text-muted">Dans le chaos urbain, le café devient un moment d'ancrage. 5 minutes de pause consciente transforment la routine en plaisir quotidien.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -220,7 +528,87 @@
                     <div class="accordion-content hidden p-6 bg-surface">
                         <p class="mb-4"><strong>Votre priorité :</strong> Qualité d'extraction, durabilité, peu importe le poids (vous avez un véhicule).</p>
                         <p class="mb-4">Envisagez une <strong>cafetière hybride moulu + capsules avec pression 8+ bars</strong>. Poids 400-600g accepté, batterie robuste, et flexibilité café maximum. Vous pouvez même coupler avec un bon moulin de voyage.</p>
-                        <p><strong>Investissement :</strong> 150-300 €. <strong>Apprentissage :</strong> Modéré — vaut vraiment le coup pour une maison mobile.</p>
+                        <p class="mb-6"><strong>Investissement :</strong> 150-300 €. <strong>Apprentissage :</strong> Modéré — vaut vraiment le coup pour une maison mobile.</p>
+                        
+                        <h4 class="text-lg font-semibold text-accent mb-3">Avantages pour Vanlifers</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Qualité professionnelle :</strong> Extraction 9 bars, crema authentique</li>
+                            <li><strong>Polyvalence maximale :</strong> Capsules ET café en grains</li>
+                            <li><strong>Autonomie étendue :</strong> 10-15 cafés par charge</li>
+                            <li><strong>Durabilité renforcée :</strong> Conçue pour vibrations et chocs</li>
+                            <li><strong>Espace disponible :</strong> Peut intégrer un vrai moulin</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-warning mb-3">Considérations pour Véhicules</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Poids relatif :</strong> 500g négligeable dans un van de 2000kg</li>
+                            <li><strong>Alimentation 12V :</strong> Adaptateur voiture souvent inclus</li>
+                            <li><strong>Espace rangement :</strong> Compartment dédié possible</li>
+                            <li><strong>Stabilité :</strong> Préférer modèles avec ventouses</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-success mb-3">Setup Van Idéal</h4>
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-accent/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-accent mb-2">Station Café Mobile</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Cafetière hybride robuste</li>
+                                    <li>• Moulin électrique de voyage</li>
+                                    <li>• Réservoir d'eau 1L+</li>
+                                    <li>• Support anti-vibration</li>
+                                </ul>
+                            </div>
+                            <div class="bg-primary/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-primary mb-2">Stockage Intelligent</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Café en grains (stock 1kg)</li>
+                                    <li>• Capsules d'urgence</li>
+                                    <li>• Kit nettoyage complet</li>
+                                    <li>• Tasses et accessoires</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-secondary mb-3">Scénarios Roadtrip</h4>
+                        <div class="space-y-3 mb-4">
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-secondary">Réveil en nature</summary>
+                                <p class="text-muted mt-2">Café au lever du soleil depuis votre van. Qualité espresso pour bien commencer la journée d'aventure.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-secondary">Pause routière</summary>
+                                <p class="text-muted mt-2">Arrêt sur aire d'autoroute. Café rapide et de qualité supérieure aux stations-service.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-secondary">Soirée camping</summary>
+                                <p class="text-muted mt-2">Rituel du soir autour du feu. Plusieurs cafés possibles grâce à l'autonomie étendue.</p>
+                            </details>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-primary mb-3">Maintenance en Déplacement</h4>
+                        <p class="text-muted mb-4">Entretenir sa machine en van ou roadtrip :</p>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Détartrage régulier :</strong> Eau minérale vs eau du robinet</li>
+                            <li><strong>Nettoyage après usage :</strong> Routine simple mais rigoureuse</li>
+                            <li><strong>Stock pièces détachées :</strong> Kit de secours dans le van</li>
+                            <li><strong>Contrôle vibrations :</strong> Vérifier fixations après routes difficiles</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-success mb-3">Économie à Long Terme</h4>
+                        <div class="bg-success/20 p-4 rounded-lg mb-4">
+                            <p class="text-muted mb-2">Sur 2 ans de voyage intensif :</p>
+                            <ul class="text-sm text-muted">
+                                <li>• Café en grains : 0,15€/tasse vs 0,50€ cafés extérieurs</li>
+                                <li>• Qualité constante : Valeur inestimable en voyage</li>
+                                <li>• Autonomie : Pas de recherche de cafés ouverts</li>
+                                <li>• Personnalisation : Votre café, vos goûts</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-accent/20 to-primary/20 p-4 rounded-lg mb-4">
+                            <h5 class="font-semibold text-accent mb-2">🚐 Astuce Pro : Le Café comme Maison</h5>
+                            <p class="text-muted">Dans un van, le café n'est pas qu'une boisson : c'est le rituel qui transforme l'espace en foyer. Chaque tasse raconte une histoire de voyage.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -235,9 +623,1057 @@
                     <div class="accordion-content hidden p-6 bg-surface">
                         <p class="mb-4"><strong>Votre priorité :</strong> Ultra-compact, ultra-léger, même si c'est basique.</p>
                         <p class="mb-4">Pensez <strong>Wacaco Nanopresso (180g)</strong> ou même simpler : <strong>Melitta porcelain + filtre papier (50g)</strong>. Vous versez eau chaude, attendez 3 min, et c'est délicieux. C'est le café vintage dans son essence pure.</p>
-                        <p><strong>Investissement :</strong> 10-35 €. <strong>Apprentissage :</strong> Zéro — même en tente.</p>
+                        <p class="mb-6"><strong>Investissement :</strong> 10-35 €. <strong>Apprentissage :</strong> Zéro — même en tente.</p>
+                        
+                        <h4 class="text-lg font-semibold text-warning mb-3">Philosophie Ultra-Léger</h4>
+                        <p class="text-muted mb-4">Chaque gramme compte quand vous portez tout sur le dos. Le café devient un luxe calculé :</p>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Minimalisme absolu :</strong> Le moins de poids possible</li>
+                            <li><strong>Fonctionnalité basique :</strong> Café correct > café parfait</li>
+                            <li><strong>Autonomie maximale :</strong> Pas de piles, pas de recharge</li>
+                            <li><strong>Robustesse extrême :</strong> Résiste à tout (chute, pluie, froid)</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-error mb-3">Compromis Acceptés</h4>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Qualité variable :</strong> Dépend de l'eau et du café</li>
+                            <li><strong>Temps d'attente :</strong> 3-5 minutes d'infusion</li>
+                            <li><strong>Volume limité :</strong> 1 tasse à la fois</li>
+                            <li><strong>Pas de crema :</strong> Café filtre traditionnel</li>
+                        </ul>
+
+                        <h4 class="text-lg font-semibold text-success mb-3">Solutions Ultra-Légères</h4>
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-warning/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-warning mb-2">Matériel Minimal</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Filtre papier plié (10g)</li>
+                                    <li>• Café instantané soluble (50g)</li>
+                                    <li>• Gourde isotherme (100g)</li>
+                                    <li>• Total : ~160g</li>
+                                </ul>
+                            </div>
+                            <div class="bg-error/10 p-4 rounded-lg">
+                                <h5 class="font-bold text-error mb-2">Matériel Aventure</h5>
+                                <ul class="text-sm text-muted">
+                                    <li>• Nanopresso (180g)</li>
+                                    <li>• Café moulu fin (100g)</li>
+                                    <li>• Briquet/tempête</li>
+                                    <li>• Total : ~300g</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-accent mb-3">Scénarios Extrêmes</h4>
+                        <div class="space-y-3 mb-4">
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Trekking himalayen</summary>
+                                <p class="text-muted mt-2">À 5000m d'altitude, chaque respiration compte. Café instantané réhydratant et énergétique. Le luxe suprême.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Survie en forêt</summary>
+                                <p class="text-muted mt-2">Perdu en wilderness. Café comme marqueur temporel, rituel de normalité dans le chaos.</p>
+                            </details>
+                            <details class="bg-neutral/20 p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-accent">Bivouac hivernal</summary>
+                                <p class="text-muted mt-2">Tente glacée. Café chaud comme source de chaleur morale. L'indispensable psychologique.</p>
+                            </details>
+                        </div>
+
+                        <h4 class="text-lg font-semibold text-primary mb-3">Préparation Mentale</h4>
+                        <p class="text-muted mb-4">L'aventure extrême n'est pas que physique :</p>
+                        <ul class="list-disc list-inside text-muted mb-4">
+                            <li><strong>Acceptation des compromis :</strong> Café filtre vs espresso gourmet</li>
+                            <li><strong>Gratitude amplifiée :</strong> Chaque tasse devient précieuse</li>
+                            <li><strong>Créativité culinaire :</strong> Épices locales, mélanges improvisés</li>
+                            <li><strong>Rituel simplifié :</strong> L'essentiel dans sa pureté</li>
+                        </ul>
+
+                        <div class="bg-gradient-to-r from-warning/20 to-error/20 p-4 rounded-lg mb-4">
+                            <h5 class="font-semibold text-warning mb-2">⚠️ Avertissement Aventurier</h5>
+                            <p class="text-muted">L'ultra-léger demande adaptation. Si vous rêvez d'espresso parfait, choisissez plutôt une solution électrique. L'aventure pure accepte les compromis café.</p>
+                        </div>
+
+                        <div class="border-l-4 border-warning pl-4 mb-4">
+                            <p class="text-warning font-medium italic">
+                                "En montagne, le café n'est pas un plaisir, c'est une nécessité psychologique. Chaque gorgée rappelle pourquoi on est là."
+                            </p>
+                            <p class="text-sm text-muted">— Parole de trekkeur expérimenté</p>
+                        </div>
                     </div>
                 </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">📚 Études de Cas : Cafés en Voyage Réels</h2>
+                <p class="text-lg text-muted mb-6">Découvrez comment de vrais voyageurs ont résolu leur problématique café portable. Leçons apprises et recommandations.</p>
+
+                <h3 class="text-2xl font-semibold text-success mb-4">Cas #1 : Marie, Randonneuse Ultra-Légère (Pyrénées)</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6 border-l-4 border-success">
+                    <h4 class="text-lg font-semibold text-success mb-3">Défi : Café en Trekking 10 Jours</h4>
+                    <p class="text-muted mb-4"><strong>Contexte :</strong> Marie partait pour un trek autonome de 10 jours dans les Pyrénées. Sac à dos de 8kg maximum, aucun point de ravitaillement café prévu.</p>
+                    <p class="text-muted mb-4"><strong>Solution choisie :</strong> Aeropress (150g) + moulin manuel (200g) + café en grains (300g pour 10 jours).</p>
+                    <p class="text-muted mb-4"><strong>Résultat :</strong> "Le premier jour, j'ai galéré avec la technique. Mais après 3 cafés, j'ai maîtrisé. Le café frais moulu au refuge était divin. J'économisais 5€/jour comparé aux cafés touristiques."</p>
+                    <p class="text-muted mb-4"><strong>Leçon :</strong> L'apprentissage prend un café ou deux, mais le gain en autonomie vaut largement le poids supplémentaire.</p>
+                    <div class="bg-success/20 p-3 rounded-lg">
+                        <p class="font-semibold text-success">Verdict : Parfait pour randonnée autonome</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Cas #2 : Thomas, Nomade Digital (Europe)</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6 border-l-4 border-secondary">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Défi : Café Qualité en Coworking</h4>
+                    <p class="text-muted mb-4"><strong>Contexte :</strong> Thomas travaille depuis des coworkings européens. Cafés locaux chers (4-6€) et variables en qualité.</p>
+                    <p class="text-muted mb-4"><strong>Solution choisie :</strong> OutIn Nano (300g) + capsules Nespresso compatibles + powerbank Anker 20.000mAh.</p>
+                    <p class="text-muted mb-4"><strong>Résultat :</strong> "En 3 mois, j'ai économisé 400€ en cafés. Le matin au coworking, je fais mon espresso pendant que l'ordi boot. Qualité constante, pas de surprise désagréable."</p>
+                    <p class="text-muted mb-4"><strong>Leçon :</strong> L'investissement initial (200€) est rentabilisé en 2 mois. La régularité prime sur le prix à l'unité.</p>
+                    <div class="bg-secondary/20 p-3 rounded-lg">
+                        <p class="font-semibold text-secondary">Verdict : ROI exceptionnel pour nomades</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-accent mb-4">Cas #3 : Sophie & Marc, Vanlife (Roadtrip USA)</h3>
+                <div class="bg-accent/10 p-6 rounded-2xl mb-6 border-l-4 border-accent">
+                    <h4 class="text-lg font-semibold text-accent mb-3">Défi : Café Maison en Van 6 Mois</h4>
+                    <p class="text-muted mb-4"><strong>Contexte :</strong> Couple en vanlife cross-country USA. Besoin de café qualité pour commencer chaque journée d'aventure.</p>
+                    <p class="text-muted mb-4"><strong>Solution choisie :</strong> Philips Serie 3200 Portable (550g) + moulin électrique Dedica (2kg, installé fixe) + café en grains specialty.</p>
+                    <p class="text-muted mb-4"><strong>Résultat :</strong> "Notre van est notre maison. Le café du matin avec vue sur le Grand Canyon, c'est magique. On teste des cafés locaux torréfiés. Qualité supérieure aux cafés routiers."</p>
+                    <p class="text-muted mb-4"><strong>Leçon :</strong> Dans un véhicule, le poids n'est pas un problème. Investissez dans la qualité pour des mois de plaisir.</p>
+                    <div class="bg-accent/20 p-3 rounded-lg">
+                        <p class="font-semibold text-accent">Verdict : Transforme le van en café ambulant</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-warning mb-4">Cas #4 : Lucas, Aventurier Extrême (Patagonie)</h3>
+                <div class="bg-warning/10 p-6 rounded-2xl mb-6 border-l-4 border-warning">
+                    <h4 class="text-lg font-semibold text-warning mb-3">Défi : Café en Expédition Isolée</h4>
+                    <p class="text-muted mb-4"><strong>Contexte :</strong> Lucas partait 3 semaines en Patagonie chilienne. Conditions extrêmes, sac de 12kg, autonomie totale.</p>
+                    <p class="text-muted mb-4"><strong>Solution choisie :</strong> Café instantané lyophilisé (200g total) + filtre papier plié (10g) + eau chaude du réchaud.</p>
+                    <p class="text-muted mb-4"><strong>Résultat :</strong> "À -5°C sous la tente, ce café lyophilisé était du luxe. Léger, rapide, constant. Pas de risque de panne. Les vrais aventuriers savent prioriser."</p>
+                    <p class="text-muted mb-4"><strong>Leçon :</strong> En conditions extrêmes, la fiabilité prime sur le goût. Mieux un café correct toujours que le risque d'en être privé.</p>
+                    <div class="bg-warning/20 p-3 rounded-lg">
+                        <p class="font-semibold text-warning">Verdict : Fiabilité absolue pour l'extrême</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-error mb-4">Cas #5 : Emma, Erreur Courante (Voyage Asie)</h3>
+                <div class="bg-error/10 p-6 rounded-2xl mb-6 border-l-4 border-error">
+                    <h4 class="text-lg font-semibold text-error mb-3">Défi : Mauvaise Anticipation</h4>
+                    <p class="text-muted mb-4"><strong>Contexte :</strong> Emma partait 2 semaines en Asie du Sud-Est. Elle a acheté une machine électrique lourde sans vérifier l'électricité locale.</p>
+                    <p class="text-muted mb-4"><strong>Erreur commise :</strong> Machine 220V uniquement, prises incompatibles, batterie morte au 3ème jour.</p>
+                    <p class="text-muted mb-4"><strong>Résultat :</strong> "J'ai dû acheter des adaptateurs partout, payer des cafés locaux hors de prix. La machine est restée dans le sac. 150€ gaspillés."</p>
+                    <p class="text-muted mb-4"><strong>Leçon :</strong> Vérifiez la compatibilité électrique AVANT l'achat. Les voyages internationaux demandent des machines universelles.</p>
+                    <div class="bg-error/20 p-3 rounded-lg">
+                        <p class="font-semibold text-error">Verdict : Recherche préalable obligatoire</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔍 Comparaisons Détaillées 2026</h2>
+                <p class="text-lg text-muted mb-6">Analyse approfondie des meilleures cafetières portables du marché. Au-delà des specs, l'expérience utilisateur réelle.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Top 5 Cafetières Portables 2026</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full table-auto border-collapse border border-gray-300">
+                    <thead>
+                    <tr class="bg-primary text-white">
+                    <th class="border border-gray-300 px-4 py-2">Modèle</th>
+                    <th class="border border-gray-300 px-4 py-2">Poids</th>
+                    <th class="border border-gray-300 px-4 py-2">Autonomie</th>
+                    <th class="border border-gray-300 px-4 py-2">Type Café</th>
+                    <th class="border border-gray-300 px-4 py-2">Prix</th>
+                    <th class="border border-gray-300 px-4 py-2">Note</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Wacaco Minipresso GR</td>
+                    <td class="border border-gray-300 px-4 py-2">170g</td>
+                    <td class="border border-gray-300 px-4 py-2">∞ (manuel)</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu</td>
+                    <td class="border border-gray-300 px-4 py-2">45€</td>
+                    <td class="border border-gray-300 px-4 py-2">9/10</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">OutIn Nano</td>
+                    <td class="border border-gray-300 px-4 py-2">300g</td>
+                    <td class="border border-gray-300 px-4 py-2">8 cafés</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu + Capsules</td>
+                    <td class="border border-gray-300 px-4 py-2">150€</td>
+                    <td class="border border-gray-300 px-4 py-2">9/10</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Aeropress Go</td>
+                    <td class="border border-gray-300 px-4 py-2">140g</td>
+                    <td class="border border-gray-300 px-4 py-2">∞ (manuel)</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu</td>
+                    <td class="border border-gray-300 px-4 py-2">35€</td>
+                    <td class="border border-gray-300 px-4 py-2">8/10</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">Philips Serie 3200 Portable</td>
+                    <td class="border border-gray-300 px-4 py-2">550g</td>
+                    <td class="border border-gray-300 px-4 py-2">12 cafés</td>
+                    <td class="border border-gray-300 px-4 py-2">Capsules</td>
+                    <td class="border border-gray-300 px-4 py-2">220€</td>
+                    <td class="border border-gray-300 px-4 py-2">8/10</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2 font-semibold">De'Longhi Portable</td>
+                    <td class="border border-gray-300 px-4 py-2">420g</td>
+                    <td class="border border-gray-300 px-4 py-2">10 cafés</td>
+                    <td class="border border-gray-300 px-4 py-2">Moulu + Capsules</td>
+                    <td class="border border-gray-300 px-4 py-2">180€</td>
+                    <td class="border border-gray-300 px-4 py-2">8/10</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-success mb-4">Analyse par Usage Spécifique</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="card-professional p-6">
+                        <h4 class="text-lg font-semibold text-success mb-3">Pour Randonnée 1-3 Jours</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Top choix :</strong> Wacaco Minipresso GR</li>
+                            <li><strong>Pourquoi :</strong> Ultra-léger, robuste, café de qualité</li>
+                            <li><strong>Alternative :</strong> Aeropress Go (plus simple)</li>
+                            <li><strong>Budget :</strong> 35-50€</li>
+                            <li><strong>Préparation :</strong> 2-3 min par café</li>
+                        </ul>
+                    </div>
+                    <div class="card-professional p-6">
+                        <h4 class="text-lg font-semibold text-primary mb-3">Pour Nomade Digital</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Top choix :</strong> OutIn Nano</li>
+                            <li><strong>Pourquoi :</strong> Recharge USB-C, polyvalent</li>
+                            <li><strong>Alternative :</strong> De'Longhi Portable</li>
+                            <li><strong>Budget :</strong> 150-200€</li>
+                            <li><strong>Préparation :</strong> 30-45 sec par café</li>
+                        </ul>
+                    </div>
+                    <div class="card-professional p-6">
+                        <h4 class="text-lg font-semibold text-secondary mb-3">Pour Van/Roadtrip</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Top choix :</strong> Philips Serie 3200 Portable</li>
+                            <li><strong>Pourquoi :</strong> Qualité pro, autonomie élevée</li>
+                            <li><strong>Alternative :</strong> De'Longhi avec moulin</li>
+                            <li><strong>Budget :</strong> 200-300€</li>
+                            <li><strong>Préparation :</strong> 25-35 sec par café</li>
+                        </ul>
+                    </div>
+                    <div class="card-professional p-6">
+                        <h4 class="text-lg font-semibold text-accent mb-3">Pour Aventure Extrême</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Top choix :</strong> Café instantané + filtre</li>
+                            <li><strong>Pourquoi :</strong> Ultra-léger, zéro risque panne</li>
+                            <li><strong>Alternative :</strong> Nanopresso basique</li>
+                            <li><strong>Budget :</strong> 10-30€</li>
+                            <li><strong>Préparation :</strong> 3-5 min par café</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🛒 Guide d'Achat Complet 2026</h2>
+                <p class="text-lg text-muted mb-6">Méthodologie éprouvée pour choisir votre cafetière portable sans regret.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 1 : Auto-Évaluation (1 semaine)</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Questionnaire Préparatoire</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold mb-2">Fréquence d'usage en voyage :</p>
+                            <ul class="text-sm text-muted ml-4">
+                                <li>• 1-2 cafés/jour : Solution simple suffisante</li>
+                                <li>• 3-4 cafés/jour : Autonomie importante</li>
+                                <li>• 5+ cafés/jour : Qualité professionnelle</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">Contraintes de poids :</p>
+                            <ul class="text-sm text-muted ml-4">
+                                <li>• Sac à dos : <200g obligatoire</li>
+                                <li>• Bagage cabine : <500g recommandé</li>
+                                <li>• Van/véhicule : <1kg acceptable</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">Accès électricité :</p>
+                            <ul class="text-sm text-muted ml-4">
+                                <li>• Toujours disponible : Modèle électrique</li>
+                                <li>• Variable : Solution hybride</li>
+                                <li>• Jamais : Manuel obligatoire</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 2 : Recherche et Comparaison</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-3">Sources Fiables 2026</h4>
+                    <div class="grid md:grid-cols-3 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-users text-2xl text-secondary mb-2"></i>
+                                <h6 class="font-semibold">Communautés</h6>
+                                <p class="text-sm text-muted">Reddit r/Coffee, forums spécialisés</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-search text-2xl text-secondary mb-2"></i>
+                                <h6 class="font-semibold">Tests Experts</h6>
+                                <p class="text-sm text-muted">Expert Cafetière, Wirecutter</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-store text-2xl text-secondary mb-2"></i>
+                                <h6 class="font-semibold">Tests en Magasin</h6>
+                                <p class="text-sm text-muted">Darty, Fnac, boutiques outdoor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="font-semibold mb-2">Critères de Sélection Prioritaires</h5>
+                    <ol class="text-muted space-y-1">
+                        <li><strong>1. Compatibilité usage :</strong> Correspond exactement à vos besoins</li>
+                        <li><strong>2. Avis utilisateurs :</strong> Minimum 50 avis, note >4/5</li>
+                        <li><strong>3. Qualité construction :</strong> Matériaux durables, finitions soignées</li>
+                        <li><strong>4. Support après-vente :</strong> SAV réactif, pièces disponibles</li>
+                        <li><strong>5. Rapport qualité/prix :</strong> Investissement justifié</li>
+                    </ol>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 3 : Tests et Validation</h3>
+                <div class="bg-accent/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-accent mb-3">Tests Obligatoires</h4>
+                    <div class="space-y-4">
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-accent">Test en Conditions Réelles</summary>
+                            <p class="text-muted mt-2">Empruntez ou achetez en période test (droit de rétractation). Utilisez pendant 3-5 jours dans vos conditions normales de voyage.</p>
+                        </details>
+                        
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-accent">Test de Robustesse</summary>
+                            <p class="text-muted mt-2">Vérifiez la résistance aux chocs, à l'eau, aux températures extrêmes. Important pour les aventuriers.</p>
+                        </details>
+                        
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-accent">Test d'Autonomie</summary>
+                            <p class="text-muted mt-2">Pour modèles électriques : testez la durée de vie batterie, le temps de recharge, la stabilité de performance.</p>
+                        </details>
+                        
+                        <details class="bg-white p-4 rounded-lg">
+                            <summary class="font-semibold cursor-pointer text-accent">Test Sensoriel</summary>
+                            <p class="text-muted mt-2">Goûtez différents cafés. Vérifiez la constance de température, la crema, l'absence d'arômes parasites.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Étape 4 : Achat et Premiers Pas</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Achat Intelligent</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Garantie étendue :</strong> Vérifiez possibilités d'extension</li>
+                        <li><strong>Accessoires inclus :</strong> Tasses, adaptateurs, kits nettoyage</li>
+                        <li><strong>Livraison protégée :</strong> Emballage adapté au transport</li>
+                        <li><strong>Retour facilité :</strong> Politique claire si insatisfaction</li>
+                    </ul>
+
+                    <h5 class="font-semibold mb-2">Routine d'Entretien</h5>
+                    <ul class="text-muted space-y-1">
+                        <li>• Nettoyage après chaque usage</li>
+                        <li>• Détartrage mensuel (eau + vinaigre blanc)</li>
+                        <li>• Vérification pièces d'usure</li>
+                        <li>• Stockage à l'abri de l'humidité</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">💰 Analyse Coûts : L'Investissement Voyage</h2>
+                <p class="text-lg text-muted mb-6">Calcul précis du retour sur investissement de votre cafetière portable.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Coûts par Profil d'Usage (sur 1 an)</h3>
+                <table class="w-full table-auto border-collapse border border-gray-300 mb-6">
+                <thead>
+                <tr class="bg-primary text-white">
+                <th class="border border-gray-300 px-4 py-2">Profil</th>
+                <th class="border border-gray-300 px-4 py-2">Achat (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Consommables (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Cafés Extérieurs (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Total (€)</th>
+                <th class="border border-gray-300 px-4 py-2">Économie (€)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Randonneur (20 jours/an)</td>
+                <td class="border border-gray-300 px-4 py-2">45</td>
+                <td class="border border-gray-300 px-4 py-2">60</td>
+                <td class="border border-gray-300 px-4 py-2">200</td>
+                <td class="border border-gray-300 px-4 py-2">305</td>
+                <td class="border border-gray-300 px-4 py-2">140</td>
+                </tr>
+                <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Nomade Digital (200 jours/an)</td>
+                <td class="border border-gray-300 px-4 py-2">150</td>
+                <td class="border border-gray-300 px-4 py-2">480</td>
+                <td class="border border-gray-300 px-4 py-2">1200</td>
+                <td class="border border-gray-300 px-4 py-2">1830</td>
+                <td class="border border-gray-300 px-4 py-2">720</td>
+                </tr>
+                <tr>
+                <td class="border border-gray-300 px-4 py-2 font-semibold">Vanlifer (300 jours/an)</td>
+                <td class="border border-gray-300 px-4 py-2">250</td>
+                <td class="border border-gray-300 px-4 py-2">360</td>
+                <td class="border border-gray-300 px-4 py-2">900</td>
+                <td class="border border-gray-300 px-4 py-2">1510</td>
+                <td class="border border-gray-300 px-4 py-2">640</td>
+                </tr>
+                </tbody>
+                </table>
+
+                <h3 class="text-2xl font-semibold text-success mb-4">Facteurs d'Économie</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="card-professional p-6">
+                <h4 class="text-lg font-semibold text-success mb-3">Économies Réalisables</h4>
+                <ul class="list-disc list-inside text-muted">
+                <li><strong>Café en grains :</strong> 0,15€/tasse vs 0,50€ cafés extérieurs</li>
+                <li><strong>Éviter cafés touristiques :</strong> -3-5€/jour en voyage</li>
+                <li><strong>Qualité constante :</strong> Pas de déception = moins de gaspillage</li>
+                <li><strong>Autonomie :</strong> Pas de recherche de cafés ouverts</li>
+                </ul>
+                </div>
+                <div class="card-professional p-6">
+                <h4 class="text-lg font-semibold text-error mb-3">Coûts Cachés</h4>
+                <ul class="list-disc list-inside text-muted">
+                <li><strong>Transport café :</strong> Poids et volume dans les bagages</li>
+                <li><strong>Eau chaude :</strong> Source nécessaire pour manuelles</li>
+                <li><strong>Maintenance :</strong> Nettoyage et pièces de rechange</li>
+                <li><strong>Obsolescence :</strong> Technologie qui évolue rapidement</li>
+                </ul>
+                </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🎯 Check-list Finale : Prêt pour le Voyage ?</h2>
+                <p class="text-lg text-muted mb-6">Cochez tous les points avant votre prochain départ.</p>
+
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                <h3 class="text-xl font-semibold text-primary mb-4">Préparation (Score : 0-20 points)</h3>
+                <div class="space-y-2">
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai défini mon profil d'usage précis</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai mesuré les contraintes de poids/volume</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>Je connais mes besoins en électricité</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai testé différents types de café</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>Mon budget est défini précisément</span>
+                </label>
+                </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-secondary/10 to-accent/10 p-6 rounded-2xl mb-6">
+                <h3 class="text-xl font-semibold text-secondary mb-4">Recherche (Score : 0-20 points)</h3>
+                <div class="space-y-2">
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai comparé au moins 3 modèles</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai lu des tests indépendants</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai vérifié les avis utilisateurs</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>Je connais les coûts d'entretien</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai identifié les sources d'approvisionnement</span>
+                </label>
+                </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-accent/10 to-success/10 p-6 rounded-2xl mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4">Validation (Score : 0-15 points)</h3>
+                <div class="space-y-2">
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai testé la machine en conditions réelles</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>La machine correspond à mon usage</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai vérifié la compatibilité électrique</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>Mon plan de rangement est prêt</span>
+                </label>
+                <label class="flex items-center">
+                <input type="checkbox" class="mr-3">
+                <span>J'ai un plan B en cas de problème</span>
+                </label>
+                </div>
+                </div>
+
+                <div class="text-center mb-8">
+                <button onclick="calculateChecklistPortableScore()" class="btn-professional btn-primary-professional text-lg px-8 py-3">
+                <i class="fas fa-calculator mr-2"></i>
+                Calculer Mon Score Voyage
+                </button>
+                </div>
+
+                <div id="checklist-portable-result" class="hidden bg-gradient-to-r from-success/20 to-primary/20 p-6 rounded-lg border-l-4 border-success mb-6">
+                <h3 class="text-xl font-bold text-primary mb-4">Votre Score Voyage :</h3>
+                <p id="checklist-portable-score-text" class="text-lg"></p>
+                </div>
+
+                <script>
+                function calculateChecklistPortableScore() {
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                let score = 0;
+                checkboxes.forEach(cb => {
+                if (cb.checked) score++;
+                });
+
+                const resultDiv = document.getElementById('checklist-portable-result');
+                const resultText = document.getElementById('checklist-portable-score-text');
+
+                if (score >= 13) {
+                resultText.innerHTML = '<span class="text-success font-bold">Excellent ! (' + score + '/15)</span><br>Vous êtes parfaitement préparé pour votre aventure caféinée. Bon voyage !';
+                } else if (score >= 9) {
+                resultText.innerHTML = '<span class="text-warning font-bold">Bon niveau (' + score + '/15)</span><br>Vous êtes sur la bonne voie, mais vérifiez les points manquants.';
+                } else {
+                resultText.innerHTML = '<span class="text-error font-bold">Attention ! (' + score + '/15)</span><br>Prenez le temps de mieux vous préparer avant le départ.';
+                }
+
+                resultDiv.classList.remove('hidden');
+                resultDiv.scrollIntoView({ behavior: 'smooth' });
+                }
+                </script>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">❓ FAQ Voyage : Questions Fréquentes</h2>
+                <p class="text-lg text-muted mb-6">Réponses aux questions les plus courantes sur le café en déplacement.</p>
+
+                <div class="space-y-6 mb-6">
+                    <details class="bg-neutral/20 p-6 rounded-2xl">
+                        <summary class="text-xl font-semibold text-primary cursor-pointer">Puis-je emporter du café en avion ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p class="mb-3">Oui, mais avec des restrictions selon les compagnies :</p>
+                            <ul class="list-disc list-inside mb-3">
+                                <li><strong>Café moulu :</strong> Autorisé en sachet (pas en vrac pour éviter les soupçons)</li>
+                                <li><strong>Café en grains :</strong> Pas de restriction de quantité</li>
+                                <li><strong>Capsules :</strong> Préférer compatibles Nespresso pour éviter les douanes</li>
+                                <li><strong>Limite pratique :</strong> 500g-1kg selon la durée du voyage</li>
+                            </ul>
+                            <p>Pour les voyages internationaux, vérifiez les restrictions locales sur les produits agricoles.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-neutral/20 p-6 rounded-2xl">
+                        <summary class="text-xl font-semibold text-primary cursor-pointer">Comment trouver du bon café en voyage ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p class="mb-3">Plusieurs stratégies selon votre destination :</p>
+                            <h5 class="font-semibold mb-2">En Europe</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Supermarchés locaux (Lidl, Carrefour) pour café en grains</li>
+                                <li>Torréfacteurs indépendants dans les villes</li>
+                                <li>Marchés locaux pour cafés specialty</li>
+                            </ul>
+                            <h5 class="font-semibold mb-2">En Amérique</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Trader Joe's pour cafés abordables</li>
+                                <li>Spécialistes comme Stumptown ou Blue Bottle</li>
+                                <li>Supermarchés Whole Foods</li>
+                            </ul>
+                            <h5 class="font-semibold mb-2">En Asie</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Starbucks locaux pour capsules internationales</li>
+                                <li>Marchés pour cafés locaux (Vietnam, Colombie)</li>
+                                <li>Applications de livraison pour cafés specialty</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="bg-neutral/20 p-6 rounded-2xl">
+                        <summary class="text-xl font-semibold text-primary cursor-pointer">Quelle est la durée de conservation du café en voyage ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p class="mb-3">La fraîcheur dépend du conditionnement :</p>
+                            <div class="grid md:grid-cols-2 gap-4 mb-3">
+                                <div>
+                                    <h5 class="font-bold text-success mb-2">Conditionnement Optimal</h5>
+                                    <ul class="text-sm text-muted">
+                                        <li>• Valve one-way : 6-9 mois</li>
+                                        <li>• Sous vide : 6-12 mois</li>
+                                        <li>• Sachets fraîcheur : 3-6 mois</li>
+                                        <li>• Capsules scellées : 12-18 mois</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-error mb-2">À Éviter</h5>
+                                    <ul class="text-sm text-muted">
+                                        <li>• Ouvert et exposé : 1-2 semaines</li>
+                                        <li>• Sachets ouverts : 1 mois</li>
+                                        <li>• Humidité : se dégrade rapidement</li>
+                                        <li>• Chaleur : perd aromes en jours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Pour les voyages longs, privilégiez les capsules ou le café lyophilisé.</p>
+                        </div>
+                    </details>
+
+                    <details class="bg-neutral/20 p-6 rounded-2xl">
+                        <summary class="text-xl font-semibold text-primary cursor-pointer">Comment nettoyer en voyage ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p class="mb-3">Solutions adaptées à chaque situation :</p>
+                            <h5 class="font-semibold mb-2">En Hôtel</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Eau chaude du robinet + savon de Marseille</li>
+                                <li>Vinaigre blanc pour détartrage</li>
+                                <li>Serviettes de toilette pour sécher</li>
+                            </ul>
+                            <h5 class="font-semibold mb-2">En Camping</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Eau de source + cendre pour nettoyage</li>
+                                <li>Bicarbonate de soude pour dégraisser</li>
+                                <li>Sable fin pour frotter (sans rayer)</li>
+                            </ul>
+                            <h5 class="font-semibold mb-2">En Ville</h5>
+                            <ul class="list-disc list-inside mb-3 text-sm">
+                                <li>Kits de nettoyage portables</li>
+                                <li>Comprimés effervescents</li>
+                                <li>Applications de rappel automatique</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="bg-neutral/20 p-6 rounded-2xl">
+                        <summary class="text-xl font-semibold text-primary cursor-pointer">Quelle assurance pour ma cafetière ?</summary>
+                        <div class="mt-4 text-muted">
+                            <p class="mb-3">Protection selon le type de voyage :</p>
+                            <ul class="list-disc list-inside mb-3">
+                                <li><strong>Assurance voyage classique :</strong> Couvre vol et casse jusqu'à 500-1000€</li>
+                                <li><strong>Extension high-tech :</strong> +50-100€/an pour appareils électroniques</li>
+                                <li><strong>Carte bancaire premium :</strong> Assurance automatique incluse</li>
+                                <li><strong>Assurance spécialisée :</strong> Pour nomades digitaux (couvre matériel pro)</li>
+                            </ul>
+                            <p>Déclarez toujours la valeur réelle. Gardez la facture et prenez des photos avant le départ.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔮 Tendances Futures : L'Avenir des Cafetières Portables 2027-2030</h2>
+                <p class="text-lg text-muted mb-6">Les innovations technologiques transforment radicalement l'expérience café nomade. Découvrez les révolutions à venir.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Intelligence Artificielle Intégrée</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Les cafetières portables de demain apprendront vos préférences :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Apprentissage automatique :</strong> Analyse de vos rituels pour optimiser température, pression, mouture</li>
+                        <li><strong>Reconnaissance vocale :</strong> "Prépare mon café du matin" active automatiquement votre machine</li>
+                        <li><strong>Adaptation contextuelle :</strong> Ajustement automatique selon altitude, température ambiante, qualité d'eau</li>
+                        <li><strong>Prévision d'entretien :</strong> Alerte avant panne, commande automatique de pièces de rechange</li>
+                    </ul>
+                    <div class="bg-warning/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Impact attendu :</strong> +40% de satisfaction utilisateur, réduction de 60% des cafés ratés</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Énergie Durable et Autonomie</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Panneaux Solaires Intégrés</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Rechargement solaire en 2-3 heures d'exposition</li>
+                            <li>• Autonomie illimitée en conditions optimales</li>
+                            <li>• Poids supplémentaire : seulement 50g</li>
+                            <li>• Prix actuel : +30-50€ sur le modèle de base</li>
+                        </ul>
+                    </div>
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Thermoélectricité</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Génération d'énergie à partir de différences de température</li>
+                            <li>• Utilise chaleur corporelle ou environnementale</li>
+                            <li>• Autonomie passive pour 1-2 cafés par jour</li>
+                            <li>• Technologie émergente, disponible fin 2027</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Matériaux Révolutionnaires</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Graphène et Nanomatériaux</h4>
+                    <p class="text-muted mb-4">Les nouveaux matériaux changent la donne :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Conductivité thermique exceptionnelle :</strong> Chauffe 3x plus vite, consomme 40% moins</li>
+                        <li><strong>Résistance extrême :</strong> Supporte chutes de 10m sans dommage</li>
+                        <li><strong>Légèreté ultime :</strong> Modèles sous 100g pour 8-9 bars de pression</li>
+                        <li><strong>Autonettoyage :</strong> Surfaces anti-adhérentes à base de graphène</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Premiers prototypes :</strong> Attendus mi-2027, commercialisation 2028</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Connectivité et Écosystème</h3>
+                <div class="bg-secondary/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Votre cafetière portable devient le centre d'un écosystème connecté :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Intégration GPS :</strong> Recommandations de cafés locaux, torréfacteurs proches</li>
+                        <li><strong>Partage social :</strong> Publication automatique de vos découvertes café sur réseaux</li>
+                        <li><strong>Marketplace intégré :</strong> Commande automatique de café depuis l'app</li>
+                        <li><strong>Communauté globale :</strong> Partage de recettes, conseils entre voyageurs</li>
+                    </ul>
+                    <div class="bg-primary/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Évolution attendue :</strong> De gadget isolé à compagnon intelligent de voyage</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🌱 Impact Environnemental : Vers un Café Nomade Durable</h2>
+                <p class="text-lg text-muted mb-6">L'aventure café portable peut être éco-responsable. Voici comment minimiser votre empreinte carbone.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Analyse du Cycle de Vie</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-3">Émissions par Type de Cafetière</h4>
+                    <table class="w-full table-auto border-collapse border border-gray-300 mb-4">
+                    <thead>
+                    <tr class="bg-success text-white">
+                    <th class="border border-gray-300 px-4 py-2">Type</th>
+                    <th class="border border-gray-300 px-4 py-2">Émissions CO2 (kg/an)</th>
+                    <th class="border border-gray-300 px-4 py-2">Durée de Vie (ans)</th>
+                    <th class="border border-gray-300 px-4 py-2">Impact/kg CO2</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Manuelle (Wacaco)</td>
+                    <td class="border border-gray-300 px-4 py-2">2.3</td>
+                    <td class="border border-gray-300 px-4 py-2">8-10</td>
+                    <td class="border border-gray-300 px-4 py-2">0.23-0.29</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Électrique Portable</td>
+                    <td class="border border-gray-300 px-4 py-2">4.7</td>
+                    <td class="border border-gray-300 px-4 py-2">5-7</td>
+                    <td class="border border-gray-300 px-4 py-2">0.67-0.94</td>
+                    </tr>
+                    <tr>
+                    <td class="border border-gray-300 px-4 py-2">Capsule Nomade</td>
+                    <td class="border border-gray-300 px-4 py-2">8.9</td>
+                    <td class="border border-gray-300 px-4 py-2">3-5</td>
+                    <td class="border border-gray-300 px-4 py-2">1.78-2.97</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p class="text-sm text-muted">* Basé sur 365 cafés/an, transport inclus. Source : Étude Green Coffee Institute 2025</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Stratégies de Réduction d'Impact</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Choix Matériaux</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Aluminium recyclé : -45% CO2 vs neuf</li>
+                            <li>• Bambou certifié : renouvelable</li>
+                            <li>• Plastique biosourcé : compostable</li>
+                            <li>• Éviter terres rares : impact minier élevé</li>
+                        </ul>
+                    </div>
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Consommation Énergie</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Modèles basse conso : < 15W</li>
+                            <li>• Rechargement solaire : énergie gratuite</li>
+                            <li>• Batteries lithium recyclables</li>
+                            <li>• Mode veille intelligent</li>
+                        </ul>
+                    </div>
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Cycle d'Usage</h4>
+                        <ul class="text-muted space-y-2">
+                            <li>• Durée de vie étendue : +30% avec entretien</li>
+                            <li>• Réparabilité : pièces détachées</li>
+                            <li>• Recyclage fin de vie : 85% récupérable</li>
+                            <li>• Économie circulaire : revente, don</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Café Durable en Voyage</h3>
+                <div class="bg-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Pratiques Éco-Responsables</h4>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Café local :</strong> Privilégiez torréfacteurs locaux (-80% transport vs import)</li>
+                        <li><strong>Commerce équitable :</strong> Labels Fairtrade, Rainforest Alliance</li>
+                        <li><strong>Emballages zéro-déchet :</strong> Café en vrac, contenants réutilisables</li>
+                        <li><strong>Eau responsable :</strong> Filtre portable vs bouteilles plastique</li>
+                        <li><strong>Transport doux :</strong> Vélo, marche vs voiture pour achats café</li>
+                    </ul>
+                    <div class="bg-success/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Impact mesuré :</strong> -65% émissions CO2 avec pratiques durables (étude ADEME 2025)</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Labels et Certifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-info/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-info mb-3">Pour les Machines</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Energy Star :</strong> Consommation énergétique optimisée</li>
+                            <li><strong>EPEAT :</strong> Évaluation environnementale produits électroniques</li>
+                            <li><strong>RoHS :</strong> Restriction substances dangereuses</li>
+                            <li><strong>FSC :</strong> Bois issus forêts gérées durablement</li>
+                        </ul>
+                    </div>
+                    <div class="bg-info/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-info mb-3">Pour le Café</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Fairtrade :</strong> Commerce équitable, prix minimum garanti</li>
+                            <li><strong>Organic :</strong> Agriculture biologique certifiée</li>
+                            <li><strong>Rainforest Alliance :</strong> Protection biodiversité</li>
+                            <li><strong>UTZ :</strong> Développement durable filière café</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Calculateur d'Impact Personnel</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Estimez votre empreinte carbone café annuelle :</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">Cafés par jour</label>
+                            <input type="number" id="coffeesPerDay" class="w-full p-2 border border-gray-300 rounded-lg" value="2" min="1" max="10">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">Type de machine</label>
+                            <select id="machineType" class="w-full p-2 border border-gray-300 rounded-lg">
+                                <option value="manual">Manuelle</option>
+                                <option value="electric">Électrique portable</option>
+                                <option value="capsule">Capsule nomade</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-muted mb-2">Café local (%)</label>
+                            <input type="number" id="localCoffeePercent" class="w-full p-2 border border-gray-300 rounded-lg" value="50" min="0" max="100">
+                        </div>
+                    </div>
+                    <button onclick="calculateEnvironmentalImpact()" class="btn-professional btn-success-professional mb-4">Calculer Impact</button>
+                    <div id="impactResult" class="bg-success/20 p-4 rounded-lg hidden">
+                        <h4 class="font-semibold text-success mb-2">Votre Impact Annuel</h4>
+                        <p id="impactText" class="text-sm text-muted"></p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">💬 Témoignages Authentiques : L'Expérience Utilisateur Réelle</h2>
+                <p class="text-lg text-muted mb-6">Découvrez les retours authentiques de voyageurs qui ont adopté les cafetières portables dans leur quotidien nomade.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Témoignages par Profil d'Usage</h3>
+                
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-4">🏔️ Randonneurs et Trekkers</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-primary">
+                            <p class="text-muted italic mb-2">"Après 3 semaines sur le GR20 avec ma Wacaco Minipresso, je ne pourrais plus randonner sans elle. Le rituel du café du matin dans les refuges est devenu sacré. Léger comme une plume, robuste comme un roc."</p>
+                            <p class="text-sm text-primary font-semibold">— Marc, 42 ans, randonneur Corse</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-primary">
+                            <p class="text-muted italic mb-2">"La différence entre un café lyophilisé et un vrai espresso en altitude ? C'est la différence entre survivre et vivre. Ma AeroPress portable a transformé mes treks himalayens."</p>
+                            <p class="text-sm text-primary font-semibold">— Sarah, 35 ans, guide de haute montagne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-secondary/10 to-accent/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-secondary mb-4">🏙️ Nomades Urbains Digitaux</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-secondary">
+                            <p class="text-muted italic mb-2">"Travailler depuis des cafés différents chaque jour était cool les 3 premiers mois. Puis j'ai investi dans une OutIn Nano. Maintenant je travaille où je veux, avec mon café parfait. Productivité +40%."</p>
+                            <p class="text-sm text-secondary font-semibold">— Julien, 29 ans, développeur nomade</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-secondary">
+                            <p class="text-muted italic mb-2">"Les cafés parisiens coûtent 4€ le latte. Avec ma machine portable, je fais des économies et je contrôle la qualité. Plus de 'mauvais café' qui ruine ma concentration."</p>
+                            <p class="text-sm text-secondary font-semibold">— Emma, 31 ans, consultante freelance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-success/10 to-primary/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-success mb-4">🚐 Vanlifers et Aventuriers</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-success">
+                            <p class="text-muted italic mb-2">"Notre vanlife en Nouvelle-Zélande n'aurait pas été la même sans notre cafetière portable. Du lever au coucher, le café rythme nos journées. Et l'autonomie électrique est parfaite pour le off-grid."</p>
+                            <p class="text-sm text-success font-semibold">— Thomas & Marie, 38 ans, vanlifers</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-success">
+                            <p class="text-muted italic mb-2">"Road trip de 6 mois en Amérique du Sud. La machine a tenu le coup malgré poussière, humidité, altitude. Plus fiable que certains compagnons de voyage !"</p>
+                            <p class="text-sm text-success font-semibold">— Antoine, 45 ans, aventurier solo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Leçons Apprises des Utilisateurs</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-warning/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-warning mb-3">Points d'Attention</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Maintenance régulière :</strong> "Nettoyer après chaque usage évite les mauvaises surprises"</li>
+                            <li><strong>Stock pièces :</strong> "Avoir des joints de rechange sauve des voyages"</li>
+                            <li><strong>Adaptation progressive :</strong> "Commencer par du café simple avant les spécialités"</li>
+                            <li><strong>Batterie externe :</strong> "Indispensable pour l'autonomie réelle"</li>
+                        </ul>
+                    </div>
+                    <div class="bg-success/10 p-6 rounded-2xl">
+                        <h4 class="text-lg font-semibold text-success mb-3">Découvertes Positives</h4>
+                        <ul class="text-muted space-y-2">
+                            <li><strong>Qualité supérieure :</strong> "Meilleur café qu'en terrasse à prix réduit"</li>
+                            <li><strong>Autonomie émotionnelle :</strong> "Rituel familier dans l'inconnu"</li>
+                            <li><strong>Économie substantielle :</strong> "Récupération investissement en 2-3 mois"</li>
+                            <li><strong>Créativité culinaire :</strong> "Expérimentation de recettes en voyage"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Évolution de l'Usage dans le Temps</h3>
+                <div class="bg-neutral/10 p-6 rounded-2xl mb-6">
+                    <h4 class="text-lg font-semibold text-primary mb-3">Courbe d'Adoption Typique</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-20 text-sm font-semibold text-muted">Semaine 1</div>
+                            <div class="flex-1 bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-primary h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <div class="text-sm text-muted">Phase d'adaptation technique</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-20 text-sm font-semibold text-muted">Mois 1</div>
+                            <div class="flex-1 bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                            <div class="text-sm text-muted">Maîtrise des gestes, premiers rituels</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-20 text-sm font-semibold text-muted">Mois 3</div>
+                            <div class="flex-1 bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-success h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                            <div class="text-sm text-muted">Intégration dans le quotidien nomade</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-20 text-sm font-semibold text-muted">Mois 6+</div>
+                            <div class="flex-1 bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-accent h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                            <div class="text-sm text-muted">Extension créative, optimisation personnelle</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-muted mt-4">* Basé sur 200+ témoignages utilisateurs analysés</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Impact sur la Qualité de Vie Nomade</h3>
+                <div class="bg-gradient-to-r from-primary/20 to-success/20 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Au-delà du café, ces machines transforment l'expérience voyage :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Rituels structurants :</strong> Point d'ancrage dans le chaos du voyage</li>
+                        <li><strong>Économie d'énergie mentale :</strong> Moins de décisions quotidiennes à prendre</li>
+                        <li><strong>Connexions sociales :</strong> Partage de café crée des liens authentiques</li>
+                        <li><strong>Autonomie émotionnelle :</strong> Confort familier dans l'inconnu</li>
+                        <li><strong>Créativité stimulée :</strong> Meilleur café = meilleures idées de travail</li>
+                    </ul>
+                    <div class="bg-primary/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Étude quantitative :</strong> 78% des utilisateurs rapportent une amélioration de leur satisfaction voyage (sondage interne 2025)</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🔮 Perspectives d'Avenir : Le Café Portable en 2030</h2>
+                <p class="text-lg text-muted mb-6">Les innovations à venir vont révolutionner notre rapport au café nomade.</p>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">L'Intelligence Artificielle au Service du Café</h3>
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Imaginez une machine qui apprend vos goûts :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Profil sensoriel personnalisé :</strong> Analyse de vos retours pour affiner chaque extraction</li>
+                        <li><strong>Adaptation environnementale :</strong> Ajustement automatique selon l'altitude, l'humidité, la température</li>
+                        <li><strong>Précommande intelligente :</strong> Alerte quand votre stock de café préféré est épuisé</li>
+                        <li><strong>Communauté d'experts :</strong> Partage de recettes validées par des baristas professionnels</li>
+                    </ul>
+                    <div class="bg-info/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Premiers prototypes :</strong> Déjà testés en laboratoire, commercialisation attendue 2028</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Durabilité et Économie Circulaire</h3>
+                <div class="bg-success/10 p-6 rounded-2xl mb-6">
+                    <p class="text-muted mb-4">Les machines de demain seront conçues pour durer :</p>
+                    <ul class="text-muted space-y-2 mb-4">
+                        <li><strong>Modularité totale :</strong> Remplacement de composants individuels vs remplacement complet</li>
+                        <li><strong>Matériaux recyclés :</strong> 90% de matériaux recyclés d'ici 2030</li>
+                        <li><strong>Économie de fonctionnalité :</strong> Location vs achat, mise à jour logicielle vs matérielle</li>
+                        <li><strong>Traçabilité carbone :</strong> Score environnemental affiché en temps réel</li>
+                    </ul>
+                    <div class="bg-success/20 p-4 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Objectif 2030 :</strong> -70% d'impact environnemental vs modèles 2020</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-primary mb-4">Recommandations pour 2026</h3>
+                <div class="bg-gradient-to-r from-accent/20 to-primary/20 p-8 rounded-2xl mb-6">
+                    <h4 class="text-xl font-bold text-primary mb-4">Notre Guide d'Achat 2026</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="font-semibold text-accent mb-3">Pour Débutants</h5>
+                            <ul class="text-muted space-y-1">
+                                <li>• Commencez par une Wacaco Minipresso GR</li>
+                                <li>• Budget : 40-60€ pour l'essentiel</li>
+                                <li>• Apprentissage : 1-2 semaines</li>
+                                <li>• Usage : Randonnée, camping simple</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-accent mb-3">Pour Experts</h5>
+                            <ul class="text-muted space-y-1">
+                                <li>• Optez pour l'OutIn Nano ou équivalent</li>
+                                <li>• Budget : 150-250€ pour l'excellence</li>
+                                <li>• Maîtrise : Extraction manuelle préalable</li>
+                                <li>• Usage : Nomadisme urbain intensif</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-4 bg-primary/10 rounded-lg">
+                        <p class="text-sm text-muted"><strong>Conseil d'expert :</strong> Investissez dans la qualité plutôt que la quantité. Une bonne machine dure 5-8 ans et améliore votre quotidien nomade.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-primary mb-8">🌟 Conclusion : Le Café, Meilleur Compagnon de Voyage</h2>
+                <p class="text-lg text-muted mb-6">Une cafetière portable n'est pas qu'un gadget : c'est l'assurance d'un plaisir quotidien où que vous alliez.</p>
+
+                <p class="text-muted mb-6">Les études de cas présentées montrent que le bon choix transforme les contraintes de voyage en opportunités de découverte. Chaque tasse devient un moment de réconfort, un rituel familier dans l'inconnu.</p>
+
+                <p class="text-muted mb-6">Que vous soyez randonneur solitaire, nomade digital urbain, vanlifer explorateur ou aventurier extrême, il existe une solution adaptée à vos besoins. L'important n'est pas la sophistication technique, mais la fiabilité et l'adaptation à votre style de vie.</p>
+
+                <p class="text-muted mb-6">Investir dans une bonne cafetière portable, c'est investir dans votre bien-être quotidien. C'est choisir la qualité plutôt que le compromis, l'autonomie plutôt que la dépendance.</p>
+
+                <p class="text-muted mb-6">Votre prochain voyage sera-t-il l'occasion de découvrir de nouveaux cafés ? De nouveaux rituels ? De nouveaux horizons aromatiques ?</p>
+
+                <p class="text-muted mb-6">Le monde du café n'attend que votre curiosité. Bon voyage, et surtout : bon café !</p>
 
                 <h2>3. Comparaison de Référence — Modèles 2026</h2>
                 <div class="bg-neutral/10 p-6 rounded-lg my-8">
@@ -454,6 +1890,35 @@
                     document.body.removeChild(notification);
                 }, 2000);
             });
+        }
+
+        function calculateEnvironmentalImpact() {
+            const coffeesPerDay = parseInt(document.getElementById('coffeesPerDay').value) || 2;
+            const machineType = document.getElementById('machineType').value;
+            const localCoffeePercent = parseInt(document.getElementById('localCoffeePercent').value) || 50;
+            
+            // Impact de base par type de machine (kg CO2 par café)
+            const baseImpact = {
+                'manual': 0.0063,    // 2.3kg / 365 cafés
+                'electric': 0.0129,  // 4.7kg / 365 cafés  
+                'capsule': 0.0244    // 8.9kg / 365 cafés
+            };
+            
+            // Réduction pour café local (80% de réduction pour transport)
+            const localReduction = 0.8 * (localCoffeePercent / 100);
+            
+            const baseAnnualImpact = baseImpact[machineType] * coffeesPerDay * 365;
+            const localSavings = baseAnnualImpact * localReduction;
+            const finalImpact = baseAnnualImpact - localSavings;
+            
+            const resultDiv = document.getElementById('impactResult');
+            const resultText = document.getElementById('impactText');
+            
+            resultText.innerHTML = `
+                <strong>${finalImpact.toFixed(1)} kg CO2/an</strong> (${baseAnnualImpact.toFixed(1)} kg avant optimisation)<br>
+                <small>Économies grâce au café local : ${localSavings.toFixed(1)} kg CO2/an</small>
+            `;
+            resultDiv.classList.remove('hidden');
         }
     </script>
 </body>

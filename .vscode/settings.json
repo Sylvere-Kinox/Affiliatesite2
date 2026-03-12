@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"d:\\\\PROJETS\\\\Mes travaux webs\\\\affiliatesite2\"; python - <<'PY'\ncontent = '''import random\nimport os\n\n# simple generator of lorem paragraphs\nbase_paragraph = \\(\n    \"Ce guide complet explore en profondeur chaque aspect de la machine à café, \"\n    \"depuis la conception jusqu'à l'entretien, en passant par les détails techniques et \"\n    \"les conseils d'usage\\. Il vise à fournir une ressource autoritaire pour tout amateur de café\\.\"\n\\)\n\n# generate content with repeated paragraphs until word count ~10000\ncontent = \\[\\]\nwords = 0\nwhile words < 10000:\n    content\\.append\\(base_paragraph\\)\n    words \\+= len\\(base_paragraph\\.split\\(\\)\\)\n\nhtml = f\"\"\"<!DOCTYPE html>\n<html lang=\\\\\"fr\\\\\">\n<head>\n<meta charset=\\\\\"UTF-8\\\\\">\n<title>Sample Long Article</title>\n</head>\n<body>\n<h1>Article de démonstration</h1>\n\\{''\\.join\\(f'<p>\\{p\\}</p>\\\\n' for p in content\\)\\}\n</body>\n</html>\"\"\"\n\nwith open\\('generate_sample\\.py','w',encoding='utf-8'\\) as f:\n    f\\.write\\(content\\)\n'''\nprint\\('rewrote file'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
